@@ -417,6 +417,63 @@ export default function Home() {
       <br />
       <br />
 
+
+      <HStack>
+        <Box backgroundColor="black" h="3px" marginLeft="5%" w="30%" />
+        <Center>
+          <Heading >
+            2022 award ceremony
+          </Heading>
+        </Center>
+        <Box backgroundColor="black" h="3px" marginRight="5%" w="30%" />
+      </HStack>
+      <br />
+      <br />
+      <Center>
+        <Carousel width={'1150px'} showThumbs={false} autoPlay={true} interval={'5000'} >
+          <div>
+            <img src="/photos/awards44.jpeg" alt="image1" />
+
+          </div>
+          <div>
+            <img src="/photos/awards45.jpeg" alt="image2" />
+
+          </div>
+          <div>
+            <img src="/photos/awards46.jpeg" alt="image3" />
+
+          </div>
+          <div>
+            <img src="/photos/awards47.jpeg" alt="image4" />
+
+          </div>
+          <div>
+            <img src="/photos/awards48.jpeg" alt="image1" />
+
+          </div>
+          <div>
+            <img src="/photos/awards49.jpeg" alt="image2" />
+
+          </div>
+          <div>
+            <img src="/photos/awards50.jpeg" alt="image3" />
+
+          </div>
+          <div>
+            <img src="/photos/awards51.jpeg" alt="image4" />
+
+          </div>
+          <div>
+            <img src="/photos/awards52.jpeg" alt="image4" />
+
+          </div>
+          
+        </Carousel>
+      </Center>
+      <br />
+      <br/>
+      <br />
+      <br/>
       <Footer />
     </div>
 

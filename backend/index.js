@@ -9,10 +9,11 @@ var { PDFDocument, StandardFonts } = require('pdf-lib');
 var path = require('path');
 var dotenv= require('dotenv');
 var {PDFParser} = require('pdf-parse');
+var nodemailer = require("nodemailer");
+var promisify = require("es6-promisify");
 
+var nodeoutlook = require('nodejs-nodemailer-outlook')
 
-
-var nodemailer = require('nodemailer');
 
 
 
@@ -234,21 +235,19 @@ app.post('/mergepdf', mergepdffilesupload.array('userDoc', 3), async (req, res) 
         console.log('File download complete!');
         }
       });
-
-      
-      
   
 
       let transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'outlook',
         auth: {
-            user: "kulkarni.vithi@gmail.com",
-            pass: "rhkrgcmfwduaomtu",
+            user: "supportiei@fcrit.ac.in",
+            // pass: "rhkrgcmfwduaomtu",
+            pass: "support@2023"
         }
     });
-  
+
     var mailOptions = {
-      from: "kulkarni.vithi@gmail.com",
+      from: "supportiei@fcrit.ac.in",
       to: "srushtikokate03@gmail.com",
       subject: 'Sending Email using Node.js',
       text: 'That was easy!',
