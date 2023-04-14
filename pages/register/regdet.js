@@ -4,6 +4,7 @@ import {Center,Text} from "@chakra-ui/react";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import NavBa from '../components/Navba';
+import Image from 'next/image'
 
 const generalInstructions = () => {
     return (
@@ -16,7 +17,8 @@ const generalInstructions = () => {
       <Center fontWeight="bold" color="black" fontSize="2xl">
       Registration fees  ( all-inclusive of GST): <br/></Center>
       <br/>
-      <Text marginStart={"300"} fontWeight="bold" color="black" fontSize="xl">
+      </Text>
+      {/* <Text marginStart={"300"} fontWeight="bold" color="black" fontSize="xl">
       Research Excellence category:   <br/></Text>
       <br/>
       <Text marginStart={"300"}color="black">
@@ -40,7 +42,17 @@ const generalInstructions = () => {
       <Center><Text fontWeight={"bold"} fontSize="xl">Note:</Text>20% fee waiver is applicable for IEI members.</Center>
       <br/>
       <br/>
-     </Text>
+     </Text> */}
+     <Center>
+      <Image
+        src="/feetable.jpg"
+        alt="feetable"
+        width={700}
+        height={700}
+
+      />
+      </Center>
+
       <Footer/>
         </div>
     );

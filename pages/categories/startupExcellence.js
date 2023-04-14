@@ -18,7 +18,7 @@ const startupExcellence = () => {
             <Header /><NavBa />
             <Text fontSize="xl" color="black" marginStart={"350"}>
                 <Text fontSize="3xl" fontWeight="bold" color="black" >
-                    Start-up Excellence Award
+                    Start-up Excellence 
                 </Text><br />
                 <Text color="black" fontSize="xl" fontWeight="normal">
                     Contribution towards Technology development<br />
@@ -47,7 +47,7 @@ const startupExcellence = () => {
                     Kindly provide detailed relevant information with adequate proofs which may be web-link or other references. Photos of the information printed in newspaper or magazine can be uploaded to support the text filled in the Nomination Form.<br /><br />
                 </Text>
                 <Text fontSize="3xl" fontWeight="bold">
-                    EVALUATION CRITERIA
+                    ENTRY LEVEL CRITERIA
                 </Text>
                 <b>•	Innovation</b>
                 <br />

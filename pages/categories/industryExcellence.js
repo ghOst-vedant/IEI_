@@ -18,7 +18,7 @@ const industryExcellence = () => {
             <Header /><NavBa />
             <Text fontSize="xl" color="black" marginStart={"350"}>
                 <Text fontSize="3xl" fontWeight="bold" color="black">
-                    Industry Excellence Award
+                    Industry Excellence 
                 </Text><br />
                 <Text color="black" fontSize="xl" fontWeight="normal">
                     Contribution towards Education <br />
@@ -36,7 +36,7 @@ const industryExcellence = () => {
                     -Laboratory development at any academic Institute<br />
                     Kindly provide detailed relevant information with adequate proofs which may be web-link or other references. Photos of the information printed in newspaper or magazine can be uploaded to support the text filled in the Nomination Form.<br />
                     <br /><br /><Text fontSize="3xl" fontWeight="bold">
-                        EVALUATION CRITERIA
+                        ENTRY LEVEL CRITERIA
                     </Text>
                     <b>•	contribution in Industry process development</b>
                     <br />

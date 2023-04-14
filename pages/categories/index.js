@@ -53,7 +53,7 @@ export default function Home() {
       <Text fontSize="3xl" fontWeight="bold" color="black" marginStart={"300"}>
       <Link href="/categories/industryExcellence">
       <a>
-      4. Industry Excellence Award
+      4. Industry Excellence
       </a>
       </Link>
       </Text>
@@ -62,7 +62,7 @@ export default function Home() {
       <Text fontSize="3xl" fontWeight="bold" color="black" marginStart={"300"}>
       <Link href="/categories/startupExcellence">
       <a>
-      5. Start-up Excellence Award
+      5. Start-up Excellence 
       </a>
       </Link>
       </Text>

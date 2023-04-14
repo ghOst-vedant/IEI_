@@ -29,12 +29,12 @@ export default function Homer() {
       </Center>
       <br/>
       <Center  fontSize="2xl" fontWeight="bold" color="black"><pre fontWeight="bold">
-      Venue</pre>
+      Certificate and Trophy</pre>
       </Center>
       <br/>
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Dr. Mini .N (Elec)-Chair</pre></Center>
+      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Dr. Bindu R (Elect)-Chair</pre></Center>
       <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Mr. Abhishek (Elec)</pre></Center> 
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Ms. Smitha R (IT)</pre></Center> 
+      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Ms. Smitha R (Comp)</pre></Center> 
       <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Mr. Vipin Sawant (Elec)</pre></Center> 
       <br/><br/><br/>
       <Center  fontSize="2xl" fontWeight="bold" color="black"><pre fontWeight="bold">
@@ -44,7 +44,7 @@ export default function Homer() {
       <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Dr. Aqleem (Mech)-Chair</pre></Center>
       <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Mr. Mritunjay (Comp)</pre></Center> 
       <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Ms. Ruchi (Elec)</pre></Center> 
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Mr. Sandeep (Mech)</pre></Center> 
+      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Mr. Bipin Alex (IT)</pre></Center> 
       <br/><br/><br/>
       <Center  fontSize="2xl" fontWeight="bold" color="black"><pre fontWeight="bold">
       Registration & finance</pre>
@@ -52,32 +52,28 @@ export default function Homer() {
       <br/>
       <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Dr. Jyoti More(Comp)-Chair</pre></Center>
       <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Ms. Rupali D (IT)</pre></Center> 
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Ms. Anitha J (EXTC)</pre></Center> 
+      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Dr. Pravin Rahate</pre></Center> 
       <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Mr. Pramod More (Comp)</pre></Center> 
       <br/><br/><br/>
       <Center  fontSize="2xl" fontWeight="bold" color="black"><pre fontWeight="bold">
-      Scrutiny (Internal and IEI members)</pre>
+      Scrutiny</pre>
       </Center>
       <br/>
       <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Ms. Megha K (EXTC)-Chair</pre></Center>
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Dr. Anant K (EXTC)</pre></Center> 
+      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Dr. Prasad K (EXTC)</pre></Center> 
       <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Dr. Sanjay R (Mech)</pre></Center> 
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Dr. Pritha (HUM)</pre></Center> 
+      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Dr. Amrita (HUM)</pre></Center> 
       <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Mr. Prashant (EXTC)</pre></Center> 
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Er. S.P. Singh</pre></Center>
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Er. Prabhakar Phulari</pre></Center> 
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Er. Ashish S. Shrivastava</pre></Center> 
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Dr. Ajay Sudhir Radke</pre></Center> 
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Er. Arvind Jadhao</pre></Center> 
       <br/><br/><br/>
       <Center  fontSize="2xl" fontWeight="bold" color="black"><pre fontWeight="bold">
-      Hospitality and media</pre>
+      Venue and media</pre>
       </Center>
       <br/>
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Ms. Archana (IT)-Chair</pre></Center>
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Mr. Rahul J (Comp)</pre></Center> 
+      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Ms. Archana S (IT)-Chair</pre></Center>
+      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Ms. Amruta P(EXTC)</pre></Center> 
+      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Ms. Sharlene R(IT)</pre></Center> 
       <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Mr. Kamlesh (Mech)</pre></Center> 
-      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Mr. Biony Alex (IT)</pre></Center> 
+      <Center color="black" fontWeight={"bold"} fontSize="2xl"><pre fontWeight="bold">Mr. Sandeep(Mech)</pre></Center> 
       <br/>
       
       <br/><br/><br/>

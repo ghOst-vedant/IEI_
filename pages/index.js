@@ -38,7 +38,7 @@ export default function Home() {
 
           <Box width={"100%"} boxShadow='outline' p='6' rounded='md'>
             <Text bgColor={"telegram.700"} fontWeight="bold">Latest Updates</Text>
-            <b>  Results of IEI BLC - FCRIT excellence awards out !!! <a href="/ceremony/announcement" >Check Here</a> </b>
+            {/* <b>  Results of IEI BLC - FCRIT excellence awards out !!! <a href="/ceremony/announcement" >Check Here</a> </b>
             <br />
             <br />
             <b>IEI-NMLC-FCRIT Excellence Awards-2022</b>
@@ -52,7 +52,7 @@ export default function Home() {
             <br />
             <b>Date and Time:</b>
             <br />
-            <b>September 16th 2022, at 5:00 p.m.</b>
+            <b>September 16th 2022, at 5:00 p.m.</b> */}
           </Box>
 
         </Flex>

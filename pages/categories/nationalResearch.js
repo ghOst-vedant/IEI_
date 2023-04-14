@@ -35,63 +35,64 @@ const nationalResearch = () => {
             <br />
 
             <Center>
-                <TableContainer>
-                    <Table variant='simple' size='sm' width={'800px'} height={'300px'} colorScheme={'telegram'}>
+            <TableContainer>
+                    <Table variant='simple' size='sm' width={'800px'} height={'150px'} style={{ border: '2px solid black' }}>
 
                         <Tbody>
                             <Tr>
-                                <Center>
-                                    <Td>
+                                    <Td style={{ textAlign: 'center', border: '1px solid black'}}>
                                         <NextLink href='/categories/researchExcellenceStudent' passHref>
+                                            <Link><Text fontSize="2xl" fontWeight="bold" color="black">
+                                                    Student (UG) <br />
+                                                </Text></Link></NextLink>
+                                    </Td>
+                                    <Td Text fontSize="2xl" fontWeight="bold" color="black" style={{ textAlign: 'center',border: '1px solid black' }}>
+                                        Student (PG) <br />
+                                    </Td>
+                            </Tr>
+                            <Tr>
+                               
+                                    <Td style={{ textAlign: 'center', border: '1px solid black'}}>
+                                        <NextLink href='/categories/researchExcellenceTeacher' passHref>
                                             <Link>
                                                 <Text fontSize="2xl" fontWeight="bold" color="black">
-                                                    Students <br />
+                                                    Student (PhD) <br />
                                                 </Text></Link>
                                         </NextLink>
                                     </Td>
-                                </Center>
-
-                            </Tr>
-                            <Tr>
-                                <Center>
-                                    <Td>
+                                    <Td style={{ textAlign: 'center', border: '1px solid black'}}>
                                         <NextLink href='/categories/researchExcellenceTeacher' passHref>
                                             <Link>
+                                                <Text fontSize="2xl" fontWeight="bold" color="black">
+                                                    Divyang Student <br />
+                                                </Text></Link>
+                                        </NextLink>
+                                    </Td>
+                              
 
+                            </Tr>
+
+                            <Tr>
+                                    <Td colspan="2" style={{ textAlign: 'center',border: '1px solid black' }}> 
+                                        <NextLink href='/categories/researchExcellenceTeacher' passHref>
+                                            <Link>
                                                 <Text fontSize="2xl" fontWeight="bold" color="black">
                                                     Teaching Faculty <br />
                                                 </Text></Link>
                                         </NextLink>
                                     </Td>
-                                </Center>
-
                             </Tr>
+
                             <Tr>
-                                <Center>
-                                    <Td>
-                                        <NextLink href='/categories/researchExcellenceIndustry' passHref>
+                                    <Td colspan="2" style={{ textAlign: 'center',border: '1px solid black' }}> 
+                                        <NextLink href='/categories/researchExcellenceTeacher' passHref>
                                             <Link>
                                                 <Text fontSize="2xl" fontWeight="bold" color="black">
-                                                    Researchers from
-                                                    Industry <br />
+                                                    Researchers from Industry/Government Organisation/Consultancy Firm <br />
                                                 </Text></Link>
                                         </NextLink>
                                     </Td>
-                                </Center>
                             </Tr>
-                            <Tr>
-                                <Center>
-                                    <Td>
-                                        <NextLink href='/categories/researchExcellenceGovt' passHref>
-                                            <Link>
-                                                <Text fontSize="2xl" fontWeight="bold" color="black">
-                                                    Researcher from Govt. Organization <br />
-                                                </Text></Link>
-                                        </NextLink>
-                                    </Td>
-                                </Center>
-                            </Tr>
-
                         </Tbody>
                     </Table>
                 </TableContainer>

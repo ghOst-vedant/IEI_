@@ -49,6 +49,7 @@ const Details = () => {
   const [fieldsPdf, setFieldsPdf] = useState(null);
   const [receiptPdf, setReceiptPdf] = useState(null);
   const [pdfUrl, setPdfUrl] = useState(null);
+  const[emailto,setEmail] =useState('');
   const [fieldsUrl, setFieldsUrl] = useState(null);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const toast = useToast();
@@ -74,12 +75,15 @@ const Details = () => {
     }
     return true;
   }
-  // console.log(email)
+
+  
+  console.log(emailto)
   async function send() {
     var formData = new FormData();
     formData.append("userDoc", receiptPdf);
     formData.append("userDoc", fieldsPdf);
     formData.append("userDoc", pdfFile);
+    // formData.append("userDoc",emailto);
     const config = {
       headers: {
         "Content-Type": "multipart/form-data",
@@ -88,7 +92,7 @@ const Details = () => {
     try {
      const res = await fetch("http://localhost:3000/mergepdf", {
         method: "POST",
-        body: formData,
+        body: formData
       }).then((res) => {
         if (res.status != 202) {
           alert("Form submitted Successfully !!!");
@@ -161,7 +165,27 @@ const Details = () => {
     setCheckVal2(!checkVal2);
   }
  
-
+// const sendEmail = async () => {
+//     // const email = document.getElementById("email").value;
+//     console.log(emailto)
+//     await fetch("http://localhost:3000/email", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: emailto,
+//     })
+//       .then((response) => response.json())
+//       .then((data) => console.log(data))
+//       .catch((error) => console.error(error));
+//   }
+ 
+  
+  
+  
+  
+  
+  
 
 
   
@@ -242,7 +266,8 @@ const Details = () => {
                 <FormLabel textColor={secondaryTextColor} >
                   Email Id
                 </FormLabel>
-                <Input id="email"  name='email' onChange={(e)=>setEmail(e.target.value)}/>
+                <Input id="email" value={emailto} onChange={(e)=>setEmail(e.target.value)}/>
+                {/* <Input id="email" type="email" onChange={updateEmail} /> */}
               </FormControl>
             </GridItem>
             

@@ -7,7 +7,9 @@
   align-items: center;
   height: 100vh;
 }
-
+#herofont {
+  font-family: 'OldeEnglish';
+}
 .main {
   padding: 5rem 0;
   flex: 1;
@@ -118,4 +120,13 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+@font-face {
+  font-family: "AnglicanText";
+  src: url("/fonts/AnglicanText.ttf")
+}
+
+.title-with-anglicantext {
+  font-family: "AnglicanText", sans-serif;
 }

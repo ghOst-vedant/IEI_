@@ -151,13 +151,13 @@ const DropdownCategories = () => {
 
                     <MenuItem>
                         <NextLink href='/categories/industryExcellence' passHref>
-                            <Link>Industry Excellence Award</Link>
+                            <Link>Industry Excellence </Link>
                         </NextLink>
                     </MenuItem>
 
                     <MenuItem>
                         <NextLink href='/categories/startupExcellence' passHref>
-                            <Link> Startup Excellence Award</Link>
+                            <Link> Startup Excellence</Link>
                         </NextLink>
                     </MenuItem>
 

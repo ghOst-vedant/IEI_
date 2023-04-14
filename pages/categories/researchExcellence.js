@@ -11,7 +11,7 @@ const researchExcellence = () => {
     return (
         <div>
             <Head>
-        <title>Categories- IEI-BLC FCRIT</title>
+        <title>Categories- IEI-NMLC FCRIT</title>
         <meta name="title" content="IEI-BLC FCRIT" />
 
       </Head>

@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Box, Flex, Text, Button, Stack } from "@chakra-ui/react";
 import Logo from "./Logo";
 import Logos from "./Logos";
+import Head from 'next/head';
 
 const NavBar1 = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -13,8 +14,12 @@ const NavBar1 = (props) => {
       
       <Logo/>
       {/* <Text fontWeight={"bold"}><p align="center" >IEI</p></Text> */}
+      <Head>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=AnglicanText&display=swap" rel="stylesheet" />
+      </Head>
       <div class="main-text" align="center" >
-        <Text marginStart={"100"} fontSize={"2xl"} fontWeight={"bold"} color="black" align={"center"}> The Institution of Engineers (India)  Organises </Text>
+        <Text marginStart={"100"} fontSize={"2xl"} fontWeight={"bold"} fontFamily="AnglicanText" color="black" align={"center"}> The Institution of Engineers (India)  Organises </Text>
         <Text marginStart={"100"}fontSize={"2xl"} fontWeight={"bold"} color="black" align={"center"}> IEI Excellence Awards 2022</Text>
         {/* <Text fontWeight={"bold"} color="black" align={"center"}>Vibration Engineering, Science, and Technology (INVEST 22)</Text> */}
         <Text marginStart={"100"}fontWeight={"bold"} color="black" align={"center"}> ---------------------------------------------------------------------------------------------------------</Text>

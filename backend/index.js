@@ -183,6 +183,13 @@ app.get('/test', function (req, res) {
 
 
 
+// app.post('/email', (req, res) => {
+//   console.log(emailto);
+//   // Handle the email value as needed
+  
+//   res.sendStatus(200);
+// });
+
 app.post('/mergepdf', mergepdffilesupload.array('userDoc', 3), async (req, res) => {
   console.log("post call working");
 
@@ -190,8 +197,9 @@ app.post('/mergepdf', mergepdffilesupload.array('userDoc', 3), async (req, res) 
 
   const files = [];
   let outputPdf = await PDFDocument.create();
-
-  // const email = req.body.email;
+  // console.log(req.body.formData);
+  // const email = req.body.emailto;
+  // console.log(email);
 
   if (req.files && req.files.length == 3) {
     for (let file of req.files) {
@@ -202,6 +210,7 @@ app.post('/mergepdf', mergepdffilesupload.array('userDoc', 3), async (req, res) 
         file.path = file.path + ".pdf";
         data = fs.readFileSync(file.path);
       }
+      console.log(typeof(req.files[3]));
 
       let pdf = await PDFDocument.load(data , { ignoreEncryption: true });
       let copiedPages = await outputPdf.copyPages(pdf, pdf.getPageIndices());

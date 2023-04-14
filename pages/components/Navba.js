@@ -56,6 +56,10 @@ const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
 };
 
 const MenuLinks = ({ isopen }) => {
+
+  const handleButtonClick = () => {
+    window.open('/ceremony/announcement', '_blank');
+  }
   return (
     <Box
       display={{ base: isopen ? "block" : "none", md: "block" }}
@@ -120,12 +124,12 @@ const MenuLinks = ({ isopen }) => {
             <MenuDivider />
 
 
-            <MenuItem fontWeight={'bold'} align="center" to="/categories/industryExcellence" color={"black"}>Industry Excellence Award</MenuItem>
+            <MenuItem fontWeight={'bold'} align="center" to="/categories/industryExcellence" color={"black"}>Industry Excellence </MenuItem>
 
 
             <MenuDivider />
 
-            <MenuItem fontWeight={'bold'} align="center" to="/categories/startupExcellence" color={"black"}>Startup Excellence Award</MenuItem>
+            <MenuItem fontWeight={'bold'} align="center" to="/categories/startupExcellence" color={"black"}>Startup Excellence</MenuItem>
 
 
           </MenuList>
@@ -147,9 +151,16 @@ const MenuLinks = ({ isopen }) => {
           </MenuList>
         </Menu>
 
-        <MenuItem as={Button} bgColor="gray" color={"black"} to="/ceremony/announcement">
+        {/* <MenuItem as={Button} bgColor="gray" color={"black"} to="/ceremony/announcement" target="_blank">
          Result Announcement
+        </MenuItem> */}
+        <MenuItem>
+          <Button bgColor="gray" color={"black"} onClick={handleButtonClick}>
+            Result Announcement
+          </Button>
         </MenuItem>
+
+
 
         <MenuItem as={Button} bgColor="gray" color={"black"} to="/photo">
           Photo-Gallery

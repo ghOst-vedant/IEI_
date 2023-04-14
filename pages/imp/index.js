@@ -19,11 +19,11 @@ export default function Home() {
         Important Dates
       </Center>
       <br/>
-      <Center fontSize={"2xl"} fontWeight="bold">Opening Date: 5th May 2022</Center><br/>
-      <Center fontSize={"2xl"}fontWeight="bold">Closing Date: 30th June 2022</Center><br/>
-      <Center fontSize={"2xl"}fontWeight="bold">Communication to the Awardees: 5th September 2022</Center><br/>
-      <Center fontSize={"2xl"}fontWeight="bold">Award Ceremony: 16th September 2022</Center><br/>
-      <br/><br/><br/>
+      <Center fontSize={"2xl"} fontWeight="bold">Registration Opening Date: 25th April 2023</Center><br/>
+      <Center fontSize={"2xl"}fontWeight="bold">Registration Closing Date: 15th July 2023</Center><br/>
+      {/* <Center fontSize={"2xl"}fontWeight="bold">Communication to the Awardees: 5th September 2022</Center><br/> */}
+      {/* <Center fontSize={"2xl"}fontWeight="bold">Award Ceremony: 16th September 2022</Center><br/>
+      <br/><br/><br/> */}
       <Footer/>
     </div>
   )
