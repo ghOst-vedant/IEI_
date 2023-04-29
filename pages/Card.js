@@ -17,7 +17,8 @@ import { SocialIcon } from 'react-social-icons';
           role={'group'}
           p={6}
           maxW={'550px'}
-          maxH={'600px'}
+          maxH={'700px'}
+          textAlign="justify"
           
           bg={useColorModeValue('white.50', 'gray.800')}
           boxShadow={'2xl'}

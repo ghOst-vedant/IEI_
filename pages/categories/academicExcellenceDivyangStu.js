@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Link from 'next/link';
 import NavBa from '../components/Navba';
-const researchExcellence = () => {
+const academicExcellence  = () => {
     return (
         <div>
             <Head>
@@ -25,12 +25,15 @@ const researchExcellence = () => {
             <br />
             <Text fontSize="xl" color="black" marginStart={"350"}>
                 <Text fontSize="2xl" fontWeight="bold">
-                    Students <br />
+                    Divyang Student<br />
                 </Text>
                 <br />
                 Entry Level Criteria:<br /> <br />
                 <Text>
-                ●  Only UG students. Student should be a BE student in January 2023 or a student passed out by August 2022.
+                ●  Student should be a BE student in January 2023 or should have been graduated by August 2022.
+                <br />
+                ●  Disabilities recognized by the admission authorities of the affiliated Institute. 
+                <br />
                 </Text>
                 <br/>
                </Text>
@@ -44,4 +47,4 @@ const researchExcellence = () => {
     );
 };
 
-export default researchExcellence;
+export default academicExcellence ;

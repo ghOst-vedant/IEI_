@@ -9,7 +9,7 @@ export default function Homer() {
   return (
     <div>
       <Head>
-        <title>Committees- IEI-BLC FCRIT</title>
+        <title>Committees- IEI-NMLC FCRIT</title>
         <meta name="title" content="IEI-BLC FCRIT" />
 
       </Head>

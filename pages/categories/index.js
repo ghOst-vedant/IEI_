@@ -11,12 +11,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Categories- IEI-BLC FCRIT</title>
+        <title>Categories- IEI-NMLC FCRIT</title>
         <meta name="title" content="IEI-BLC FCRIT" />
 
       </Head>
       <VideoBackground />
-      <Header/><NavBa />
+      <Header/>
+      <NavBa />
       <Center  fontSize="6xl" fontWeight="bold" color="black">
       Award Categories
       </Center>

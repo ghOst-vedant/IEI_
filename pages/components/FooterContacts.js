@@ -14,8 +14,8 @@ const FooterContacts = () => {
                     
                     <HStack spacing={'30px'} >
                     <LinkIcon boxSize={8}/>
-                    <Link href='http://ieiblc.org/' isExternal fontSize="2xl">
-                        http://ieiblc.org/
+                    <Link href='http://ieinmlc.org/' isExternal fontSize="2xl">
+                        http://ieinmlc.org/
                     </Link>
                     </HStack>
                     <br/>

@@ -23,7 +23,7 @@ const NavBar1 = (props) => {
         <Text marginStart={"100"}fontSize={"2xl"} fontWeight={"bold"} color="black" align={"center"}> IEI Excellence Awards 2022</Text>
         {/* <Text fontWeight={"bold"} color="black" align={"center"}>Vibration Engineering, Science, and Technology (INVEST 22)</Text> */}
         <Text marginStart={"100"}fontWeight={"bold"} color="black" align={"center"}> ---------------------------------------------------------------------------------------------------------</Text>
-        <Text marginStart={"100"}fontWeight={"bold"} color="black" align={"center"}>Jointly organised by the IEI-BLC & Fr. C. Rodrigues Institute of Technology, Vashi</Text>
+        <Text marginStart={"100"}fontWeight={"bold"} color="black" align={"center"}>Jointly organised by the IEI-NMLC & Fr. C. Rodrigues Institute of Technology, Vashi</Text>
         <Text marginStart={"100"}fontWeight={"bold"} color="black" align={"center"}>     September 15, 2022  </Text>
       </div>
       <Logos />

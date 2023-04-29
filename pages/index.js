@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>IEI-BLC FCRIT</title>
+        <title>IEI-NMLC FCRIT</title>
         <meta name="title" content="IEI-BLC FCRIT" />
 
       </Head>
@@ -67,7 +67,7 @@ export default function Home() {
         <Carousel width={'100%'} showThumbs={false} autoPlay={true} interval={'5000'} >
           <div>
             <img src="/monument2.jpg" alt="image1" />
-            <p className="legend">IEI-BLC</p>
+            <p className="legend">IEI-NMLC</p>
           </div>
           <div>
             <img className='carousel-img' src="/2.jpg" alt="image2" />
@@ -78,10 +78,10 @@ export default function Home() {
       </Flex>
       <br /><br /><br />
       <SimpleGrid bgColor={"telegram.700"} paddingTop="20" paddingBottom="20" columns={2} spacingX='50px' spacingY='50px'>
-        <Card aboutName={"About IEI-BLC FCRIT Awards "} texts={"It is with great pleasure that Fr. C. Rodrigues Institute of Technology in collaboration with The Institute of Engineers, India – Belapur Local Centre is announcing the IEI BLC – FCRIT Excellence Awards – 2022. The objective of  the award ceremony is to recognize and appreciate the excellence of Academicians and Industry professionals in their respective domains. We are glad to inform that IEI BLC – FCRIT Excellence Awards organized in the years 2019 and 2021 received overwhelming responses and have been very successful."} />
+        <Card aboutName={"About IEI-NMLC FCRIT Awards "} texts={"It is with great pleasure that Agnel Charities Fr. C. Rodrigues Institute of Technology (FCRIT) in collaboration with The Institute of Engineers, India Navi Mumbai Local Centre NMLC) is announcing the IEI NMLC FCRIT Excellence Awards 2023 . The objective of the award ceremony is to recognize and appreciate the excellence of academicians and Industry professionals in their respective domains. We are glad to inform that IEI NMLC FCRIT Excellence Awards organized in the years 2019, 2021 and 2022 received overwhelming responses and have been very successful."} />
         <Card aboutName={"About The Institution of Engineers (India) "} texts={"The Institution of Engineers (India) [IEI] is the largest multidisciplinary professional body of engineers, established in 1920 with its Headquarters located in Kolkata and incorporated under Royal Charter on 9th September,1935 by the then His Majesty of King George V. The Royal Charter endowed the Institution with the responsibility to promote the general advancement of engineering amongst its members and persons attached to the Institution. The Institution is protected under Article 372 of the Constitution of India                "} />
-        <Card aboutName={"About IEI-Belapur Local Center"} texts={"The Council of IEI set up Belapur Local Centre (BLC) in May 1994. Ever since its inception, BLC is vibrant with active participation from its office bearers and ever-increasing members. BLC is situated in a 1000 Sq. Meters plot in Sector 15, Central Business District (CBD), close to Belapur Railway Station in Navi Mumbai. BLC Building was designed by the reputed architects, M/s.Shashi Prabhu & Associates and M/s. Sopan Parbhu Architect. At present,IEIBLC has 3687 members comprising of engineers from 15 Divisions."} />
-        <Card aboutName={"About FCRIT "} texts={"FCRIT was established in 1994, named after late Rev. Fr. Conceicao Rodrigues. FCRIT persistently seeks and adopts innovative methods to improve the quality of education on a consistent basis. The global standards set at FCRIT in the field of teaching spurs the students in relentless pursuit of excellence. Its location in the vicinity of the holy places of various religious denominations underscores its secular credentials and its philosophy of 'Vasudhaiva Kuttumbakam'. The college prides on being one of few that has accreditation for all five branches."} />
+        <Card aboutName={"About IEI- NMLC Local Center"} texts={"The Council of IEI had set up Navi Mumbai Local Centre (NMLC), formerly called as Belapur Local Centre (BLC), in May 1994. Ever since its inception, NMLC is vibrant with active participation from its office bearers and ever-increasing members. NMLC is situated in a 1000 sq. meters plot in Sector 15, Central Business District (CBD), close to Belapur Railway Station in Navi Mumbai. NMLC Building was designed by the reputed architects, M/s. Shashi Prabhu & Associates and M/s. Sopan Parbhu Architect. It consists of stilt with 5 floors. At present, IEI-NMLC has 3687 members comprising of engineers from 15 Divisions."} />
+        <Card aboutName={"About FCRIT "} texts={"FCRIT was established in 1994, named after late Rev. Fr. Conceicao Rodrigues. FCRIT persistently seeks and adopts innovative methods to improve the quality of education on a consistent basis. The global standards set at FCRIT in the field of teaching spurs the students in relentless pursuit of excellence. Though its reputation rests mainly on the high quality, value-based technical education that it imparts, it has to its credit a verdant, well-maintained campus and extensive facilities. Its location in the vicinity of the holy places of various religious denominations underscores its secular credentials and its philosophy of Vasudhaiva Kuttumbakam. The institute prides on being one of few that has accreditation for all five branches by National Board of Accreditation (NBA) and graded by NAAC. The Institute has also received the Best College Award in Urban Category from Mumbai University."} />
       </SimpleGrid>
       <br />
 

@@ -25,12 +25,12 @@ const researchExcellence = () => {
             <br />
             <Text fontSize="xl" color="black" marginStart={"350"}>
                 <Text fontSize="2xl" fontWeight="bold">
-                    Students <br />
+                    Students(PhD) <br />
                 </Text>
                 <br />
                 Entry Level Criteria:<br /> <br />
                 <Text>
-                ●  Only UG students. Student should be a BE student in January 2023 or a student passed out by August 2022.
+                ●  Registered scholars preferably on the verge of completion, exceptional PhD work in earlier stage is also welcome.
                 </Text>
                 <br/>
                </Text>

@@ -19,7 +19,7 @@ const NavBar = (props) => {
       {/* <Text fontWeight={"bold"}><p align="center" >IEI</p></Text> */}
       <div className="main-text" align="center" >
       <Heading id="herofont" marginStart={"100"} fontSize={"5xl"} fontFamily={"fantasy"} style={{fontFamily:'Old English Text MT'}} color="rgb(0, 0, 102)" align={"center"}> The Institution of Engineers (India) </Heading>
-      <Text marginStart={"100"} fontSize={"2xl"} fontWeight={"bold"} color="blueviolet" align={"center"}> Belapur Local Centre </Text>
+      <Text marginStart={"100"} fontSize={"2xl"} fontWeight={"bold"} color="blueviolet" align={"center"}> Navi Mumbai Local Centre </Text>
       {/* <Text fontWeight={"bold"} color="black" align={"center"}>Vibration Engineering, Science, and Technology (INVEST 22)</Text> */}
       <Text marginStart={"100"} fontSize={"2xl"} fontWeight={"bold"} color="black" align={"center"}>And</Text>
         <Text marginStart={"100"} fontSize={"2xl"} fontWeight={"bold"} color="black" align={"center"}>Agnel Charities'

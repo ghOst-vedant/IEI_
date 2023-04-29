@@ -18,101 +18,17 @@ const academicExcellence = () => {
       <Header /><NavBa />
 
       <Text fontSize="xl" color="black" marginStart={"350"}>
+        < br />
         <Text fontSize="2xl" fontWeight="bold">
           Principal/Director <br />
         </Text><br />
-        Entry Level criteria: <br />
-        -Principals of Engineering colleges affiliated to AICTE <br />
-        Institute should have minimum five branches and at least 300 students <br />
-        (Please provide data for last three years)<br /><br />
-
-        <Text fontSize="3xl" fontWeight="bold">
-          Document to be uploaded as a single .pdf
+        Entry Level criteria: <br /> <br /> 
+        <Text>
+        ●   Principal/ Director of Engineering colleges satisfying the norms of affiliation. <br />
+        ●   Added advantage for Principal/Director of Institutes having at least five branches/ 300
+            students
+<br /><br />
         </Text>
-        <br />
-        - Principal <br />
-        -Positions held currently apart from your affiliated Institute <br />
-        -Contribution in process development at university level  <br />
-        -Contribution in academic curriculum development  <br />
-        -Innovative methods pioneered by you for keeping the research culture vibrant in your Institute <br />
-        -Any new schemes introduced by you in your Institute to motivate faculty growth  <br />
-        -Whether Institute  is NAAC accredited during your tenure as Principal. <br />
-        -Efforts to facilitate faculty during online teaching of pandemic period <br />
-        -Any new techniques adapted by you to keep the interaction with students fruitful  <br />
-        -Any other achievements. <br />
-        <br /><br /><Text fontSize="3xl" fontWeight="bold">
-          EVALUATION CRITERIA
-        </Text>
-        <b>•	Research funds</b>
-        <br />
-        -	Amount
-        <br />
-        -	 Purpose
-        <br />
-        -	 Funding agency
-        <br />
-        -	 Utilization
-        <br />
-        <br />
-        <b>•	Promotions</b>
-        <br />
-        -	Number of faculty and non-teaching staff promoted over the past three years with their previous post and current post
-        <br />
-        <br />
-        <b>•	Higher studies</b>
-        <br />
-        -	Number of faculty deputed on higher studies
-        <br />
-        -	Non-teaching staff sent for training over past 3 years
-        <br />
-        <br />
-        <b>•	PhDs completed</b>
-        <br />
-        -	list of completed PhDs in past three years
-        <br />
-        <br />
-        <b>•	NBA Departments</b>
-        <br />
-        -	NBA accredited department details
-        <br />
-        <br />
-        <b>•	New Branches</b>
-        <br />
-        -	Proposal and approval letters with mentioned sanction intake
-        <br />
-        <br />
-        <b>•	Investment in Infrastructure</b>
-        <br />
-        -	Growth of infrastructure over past three years
-        <br />
-        -
-        <br />
-        <br />
-        <b>•	NIRF Ranking</b>
-        <br />
-        -	Ranking proof
-        <br />
-        <br />
-        <b>•	Time line ranking</b>
-        <br />
-        -	Improvement in various rankings
-        <br />
-        <br />
-        <b>•	any ither achievements</b>
-        <br />
-        -	professional society activities
-        <br />
-        -	local chapters/ students chapters activity
-        <br />
-        -	Industry-Institute interaction
-        <br />
-        -	Alumni involvement efforts and outcomes
-        <br />
-        -	good governance practices
-        <br />
-        -	significant achievements not listed above
-        <br /><br /><br />
-
       </Text>
 
       <Footer />

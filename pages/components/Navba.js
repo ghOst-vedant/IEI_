@@ -57,9 +57,9 @@ const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
 
 const MenuLinks = ({ isopen }) => {
 
-  const handleButtonClick = () => {
-    window.open('/ceremony/announcement', '_blank');
-  }
+  // const handleButtonClick = () => {
+  //   window.open("/categories/generalInstructions",target="_blank");
+  // }
   return (
     <Box
       display={{ base: isopen ? "block" : "none", md: "block" }}
@@ -151,19 +151,29 @@ const MenuLinks = ({ isopen }) => {
           </MenuList>
         </Menu>
 
-        {/* <MenuItem as={Button} bgColor="gray" color={"black"} to="/ceremony/announcement" target="_blank">
-         Result Announcement
-        </MenuItem> */}
-        <MenuItem>
-          <Button bgColor="gray" color={"black"} onClick={handleButtonClick}>
-            Result Announcement
+        <MenuItem to="/categories/generalInstructions">
+          <Button bgColor="gray" color={"black"}>
+            Instructions
           </Button>
         </MenuItem>
 
+        {/* <MenuItem as={Button} bgColor="gray" color={"black"} to="/ceremony/announcement" target="_blank">
+         Result Announcement
+        </MenuItem> */}
+        {/* <MenuItem>
+          <Button bgColor="gray" color={"black"} >
+            Result Announcement
+          </Button>
+        </MenuItem> */}
 
+        
 
-        <MenuItem as={Button} bgColor="gray" color={"black"} to="/photo">
-          Photo-Gallery
+        <MenuItem as={Button} bgColor="gray" color={"black"} to="/photo/index1">
+          Past Awardees
+        </MenuItem>
+
+        <MenuItem as={Button} bgColor="gray" color={"black"} to="/photo/index2">
+          Past Award Ceremonies
         </MenuItem>
       </Stack>
     </Box>

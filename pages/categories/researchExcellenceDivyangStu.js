@@ -25,12 +25,14 @@ const researchExcellence = () => {
             <br />
             <Text fontSize="xl" color="black" marginStart={"350"}>
                 <Text fontSize="2xl" fontWeight="bold">
-                    Students <br />
+                    Divyang Student<br />
                 </Text>
                 <br />
                 Entry Level Criteria:<br /> <br />
                 <Text>
-                ●  Only UG students. Student should be a BE student in January 2023 or a student passed out by August 2022.
+                ●  Should be a Student of TE or BE in January 2023.
+               < br />
+                ●  Disabilities recognized by the admission authorities of the affiliated Institute.
                 </Text>
                 <br/>
                </Text>

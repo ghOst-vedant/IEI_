@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>About- IEI-BLC FCRIT</title>
+        <title>About- IEI-NMLC FCRIT</title>
         <meta name="title" content="IEI-BLC FCRIT" />
 
       </Head>
