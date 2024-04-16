@@ -16,8 +16,7 @@ export default function Home() {
 
       </Head>
       <VideoBackground />
-      <Header/>
-      <NavBa />
+      <Header/><NavBa />
       <Center  fontSize="6xl" fontWeight="bold" color="black">
       Award Categories
       </Center>

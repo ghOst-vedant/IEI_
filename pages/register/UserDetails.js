@@ -35,8 +35,10 @@ import { ViewIcon } from "@chakra-ui/icons";
 import { jsPDF } from "jspdf";
 import $, { merge } from "jquery";
 import AwardCategories from "./AwardCategories";
+import Gender from "./Gender"
 import { useState } from "react";
 import axios from 'axios';
+import Category from "./Category";
 
 
 
@@ -49,7 +51,7 @@ const Details = () => {
   const [fieldsPdf, setFieldsPdf] = useState(null);
   const [receiptPdf, setReceiptPdf] = useState(null);
   const [pdfUrl, setPdfUrl] = useState(null);
-  const[emailto,setEmail] =useState('');
+  const [emailto, setEmail] = useState('');
   const [fieldsUrl, setFieldsUrl] = useState(null);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const toast = useToast();
@@ -62,21 +64,22 @@ const Details = () => {
     }
     return response;
   }
-  function verify(){
-    var applicantName = $("#name").val();
-    var sem = $("#sem").val();
-    var dept = $("#department").val();
-    var insti = $("#institute").val();
-    var award = $("#Category").val();
-    var email=$('#email').val();
+  function verify() {
+    var applicantName = $("#name").val().trim();
+    var sem = $("#sem").val().trim();
+    var dept = $("#department").val().trim();
+    var insti = $("#institute").val().trim();
+    var award = $("#Category").val().trim();
+    var email = $('#email').val().trim();
+    var gender = $('#Gender').val().trim();
     // console.log("Verifying fields ");
-    if (applicantName == '' || dept == '' || insti=='' || award == ''| pdfUrl == null || receiptPdf == null || !checkVal || !checkVal2){
+    if (applicantName == '' || dept == '' || insti == '' || award == '' | pdfUrl == null || receiptPdf == null || !checkVal || !checkVal2) {
       return false;
     }
     return true;
   }
 
-  
+
   console.log(emailto)
   async function send() {
     var formData = new FormData();
@@ -90,7 +93,7 @@ const Details = () => {
       },
     };
     try {
-     const res = await fetch("http://localhost:3000/mergepdf", {
+      const res = await fetch("https://tonythomas.xyz/mergepdf", {
         method: "POST",
         body: formData
       }).then((res) => {
@@ -98,9 +101,9 @@ const Details = () => {
           alert("Form submitted Successfully !!!");
           console.log("Success");
           window.location.reload(false);
-        console.log(res);
+          console.log(res);
         }
-      else {
+        else {
           alert("Please Resubmit Form!!!");
           console.log("Error", res.json());
         }
@@ -119,30 +122,34 @@ const Details = () => {
     setPdfUrl(URL.createObjectURL(pdf_file));
     var doc = jsPDF();
     var pos = 20;
-    var applicantName = $("#name").val();
+    var applicantName = $("#name").val().trim();
     // if (document.getElementById("sem").val) {
-      var sem = $("#sem").val();
+    var sem = $("#sem").val();
     // }
-    var dept = $("#department").val();
-    var insti = $("#institute").val();
-    var award = $("#Category").val();
-    var contact = $('#contactNo').val();
-    var email=$('#email').val();
+    var dept = $("#department").val().trim();
+    var insti = $("#institute").val().trim();
+    var award = $("#Category").val().trim();
+    var category=$("#Categoryspecify").val().trim();
+    var gender=$("#Gender").val().trim();
+    var contact = $('#contactNo').val().trim();
+    var email = $('#email').val().trim();
     var role = $("#SelectOptions").find("#applicant-role").val();
     doc.text(20, 20, "Name : " + applicantName);
-    if (sem.length!=0){
-    doc.text(20,30, "Semester : "+sem);
+    if (sem.length != 0) {
+      doc.text(20, 30, "Semester : " + sem);
     }
-    else{
-      doc.text(20,30, "Semester : Not filled");
+    else {
+      doc.text(20, 30, "Semester : Not filled");
     }
     doc.text(20, 40, "Department : " + dept);
     doc.text(20, 50, "Institute : " + insti);
     doc.text(20, 60, "Award Category : " + award);
-    doc.text(20, 70, "Contact Details (Mobile Number and Email) : "+contact );
-    doc.text(20, 80, "Email Details (Email) : "+email );
+    doc.text(20, 70, "Category : " + category);
+    doc.text(20, 80, "Contact Details (Mobile Number and Email) : " + contact);
+    doc.text(20,90,"Gender : " + gender);
+    doc.text(20, 100, "Email Details (Email) : " + email);
     if (!(typeof role === "undefined")) {
-      doc.text(20, 90, "Applicant Role : " + role);
+      doc.text(20, 110, "Applicant Role : " + role);
     }
     var blobPDF = new Blob(
       [doc.output("blob", { filename: "userDetails.pdf" })],
@@ -164,31 +171,31 @@ const Details = () => {
     e.preventDefault();
     setCheckVal2(!checkVal2);
   }
- 
-// const sendEmail = async () => {
-//     // const email = document.getElementById("email").value;
-//     console.log(emailto)
-//     await fetch("http://localhost:3000/email", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: emailto,
-//     })
-//       .then((response) => response.json())
-//       .then((data) => console.log(data))
-//       .catch((error) => console.error(error));
-//   }
- 
-  
-  
-  
-  
-  
-  
+
+  // const sendEmail = async () => {
+  //     // const email = document.getElementById("email").value;
+  //     console.log(emailto)
+  //     await fetch("http://localhost:3000/email", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: emailto,
+  //     })
+  //       .then((response) => response.json())
+  //       .then((data) => console.log(data))
+  //       .catch((error) => console.error(error));
+  //   }
 
 
-  
+
+
+
+
+
+
+
+
   return (
     <Box>
       <Center
@@ -248,10 +255,15 @@ const Details = () => {
                 <FormLabel textColor={secondaryTextColor}>
                   Semester (applicable only for students)
                 </FormLabel>
-                <Input id="sem"  placeholder="6" />
+                <Input id="sem" placeholder="6" />
               </FormControl>
             </GridItem>
-            
+
+            <GridItem colSpan={2}>
+              <Gender isRequired />
+            </GridItem>
+
+
             <GridItem colSpan={2}>
               <FormControl isRequired>
                 <FormLabel textColor={secondaryTextColor}>
@@ -266,20 +278,24 @@ const Details = () => {
                 <FormLabel textColor={secondaryTextColor} >
                   Email Id
                 </FormLabel>
-                <Input id="email" value={emailto} onChange={(e)=>setEmail(e.target.value)}/>
+                <Input id="email" value={emailto} onChange={(e) => setEmail(e.target.value)} />
                 {/* <Input id="email" type="email" onChange={updateEmail} /> */}
               </FormControl>
             </GridItem>
-            
-            
+
+
             <GridItem colSpan={2}>
               <AwardCategories isRequired />
             </GridItem>
 
+            <GridItem colSpan={2}>
+              <Category isRequired />
+            </GridItem>
+
             <GridItem id="SelectOptions" colSpan={2}></GridItem>
             <GridItem id="receiptPdf" colSpan={2}>
-            <FormControl isRequired={true}>
-                <FormLabel>Upload Transaction Receipt here</FormLabel>
+              <FormControl isRequired={true}>
+                <FormLabel>Upload Transaction Receipt here <b>(Upload pdf only)</b></FormLabel>
                 <Input
                   isRequired
                   accept="application/pdf"
@@ -287,8 +303,8 @@ const Details = () => {
                   id="receiptDoc"
                   onChange={handleReceipt}
                 />
-                </FormControl>
-              
+              </FormControl>
+
             </GridItem>
             <GridItem colSpan={1}>
               <FormControl isRequired={true}>
@@ -357,7 +373,7 @@ const Details = () => {
               <GridItem colSpan={2}>
                 <FormControl isRequired>
                   <Checkbox onChange={handleCheckDecision} isRequired>
-                  I/We hereby agree to the final decision of  judges.
+                    I/We hereby agree to the final decision of  judges.
                   </Checkbox>
                 </FormControl>
               </GridItem>
@@ -366,10 +382,11 @@ const Details = () => {
                 mt="5"
                 mb="5"
                 bgColor="green.500"
-                onClick={ ()=>{
-                  if (verify() == true){
-                    send()}
-                  else{
+                onClick={() => {
+                  if (verify() == true) {
+                    send()
+                  }
+                  else {
                     toast({
                       title: "Incomplete Form",
                       description: "Please Fill all the details",
@@ -377,8 +394,9 @@ const Details = () => {
                       duration: 3000,
                       isClosable: true,
                     });
-                } }
-              }
+                  }
+                }
+                }
                 size="lg"
               >
                 Submit

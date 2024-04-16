@@ -23,7 +23,7 @@ export default function Home() {
       <br />
       <br />
       <SimpleGrid paddingBottom="20" columns={2} spacingX='20px' spacingY='20px'>
-        <Card des1={"Chair,"} des2={"IEI NMLC FCRIT Excellence "} des3={"Award"} des4={"Managing Committee  "} des5={"Member,(IEI BLC)"} des6={"Dean (Faculty) and Head "} des7={"(Mech),FCRIT, Vashi"} personName={"Dr. Nilaj Deshmukh"} image="/photos/dr-nilaj-deshmukh.jpeg" />
+        <Card des1={"Chair,"} des2={"IEI NMLC FCRIT Excellence "} des3={"Award"} des4={"Managing Committee  "} des5={"Member,(IEI NMLC)"} des6={"Dean (Faculty) and Head "} des7={"(Mech),FCRIT, Vashi"} personName={"Dr. Nilaj Deshmukh"} image="/photos/dr-nilaj-deshmukh.jpeg" />
         <Card des1={"Co-Chair,"} des2={"IEI NMLC FCRIT Excellence "} des3={"Award"} personName={"Dr. M. Kiruthika"} des4={"Associate Professor, Comp.  "} des5={"Engg. Dept.,"} des6={"FCRIT, Vashi"} image="/photos/km.jpg" />
       </SimpleGrid>
       <br />

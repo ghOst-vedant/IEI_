@@ -15,8 +15,12 @@ export default function Footer() {
           <Link target="_blank" href="https://github.com/gregbg218">Gregory</Link>
           ,{" "}
           <Link target="_blank" href="https://github.com/kaliappan01">Kaliappan</Link>{" "}
-          &{" "}
-          <Link target="_blank" href="https://github.com/Farhan-hyd"> Farhan</Link>
+          ,{" "}
+          <Link target="_blank" href="https://github.com/Farhan-hyd">Farhan</Link>
+          ,{" "}
+          <Link target="_blank" href="https://github.com/vithi-pixel">Vithi</Link>
+          {" "}&{" "}
+          <Link target="_blank" href="https://github.com/Kokatesrushti"> Srushti</Link>
         </Text>
         <Text flex={1} as="a" href={"https://fcrit.ac.in"} color="white" textAlign={["center", "end", "end", "end"]} >
           F.C.R.I.T
