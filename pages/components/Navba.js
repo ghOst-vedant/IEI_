@@ -1,7 +1,21 @@
 import React from "react";
-import { Link, Box, Flex, Text, Button, Stack, Menu, MenuButton, MenuList, MenuItemOption, MenuGroup, MenuOptionGroup, MenuDivider, } from "@chakra-ui/react";
-import { ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons'
-
+import {
+  Link,
+  Box,
+  Flex,
+  Text,
+  Button,
+  Stack,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+  Image,
+} from "@chakra-ui/react";
+import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 const NavBa = (props) => {
   const [isopen, setIsOpen] = React.useState(false);
 
@@ -56,7 +70,6 @@ const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
 };
 
 const MenuLinks = ({ isopen }) => {
-
   // const handleButtonClick = () => {
   //   window.open("/categories/generalInstructions",target="_blank");
   // }
@@ -72,21 +85,28 @@ const MenuLinks = ({ isopen }) => {
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-
-        <MenuItem as={Button} bgColor="gray" color={"black"} to="/">
+        <MenuItem as={Button} bgColor="#DCF2F1" color={"black"} to="/">
           Home
         </MenuItem>
 
-
-
         <Menu>
-          <MenuButton as={Button} bgColor="gray" color={"black"} rightIcon={<ChevronDownIcon />}>
+          <MenuButton
+            as={Button}
+            bgColor="#DCF2F1"
+            color={"black"}
+            rightIcon={<ChevronDownIcon />}
+          >
             Committees
           </MenuButton>
-          <MenuList minWidth='240px' color={"black"} bgColor="gray.100">
-            <MenuItem align="center" to="/committees/adv" color={"black"}>Advisory Committee  </MenuItem>
-            <MenuItem align="center" to="/committees" color={"black"}>Organising Committee </MenuItem>
-          </MenuList></Menu>
+          <MenuList minWidth="240px" color={"black"} bgColor="gray.100">
+            <MenuItem align="center" to="/committees/adv" color={"black"}>
+              Advisory Committee{" "}
+            </MenuItem>
+            <MenuItem align="center" to="/committees" color={"black"}>
+              Organising Committee{" "}
+            </MenuItem>
+          </MenuList>
+        </Menu>
 
         {/* <Menu>
           <MenuButton as={Button} bgColor="gray" color={"black"} rightIcon={<ChevronDownIcon />}>
@@ -100,59 +120,129 @@ const MenuLinks = ({ isopen }) => {
           </MenuList>
         </Menu> */}
         <Menu>
-          <MenuButton as={Button} isOpen={'true'} bgColor="gray" color={"black"} rightIcon={<ChevronDownIcon />}>
+          <MenuButton
+            as={Button}
+            isOpen={"true"}
+            bgColor="#DCF2F1"
+            color={"black"}
+            rightIcon={<ChevronDownIcon />}
+          >
             Categories
           </MenuButton>
-          <MenuList minWidth='240px' color={"black"} bgColor="gray.100">
-
-            <MenuOptionGroup fontSize={'17px'} align="center" title='Research Excellence' type='checkbox'>
-              <MenuOptionGroup defaultValue='asc' type='radio'>
-                <MenuItem align="center" to='/categories/regionalResearch' value='desc'>Regional</MenuItem>
-                <MenuItem align="center" to='/categories/nationalResearch' value='asc'>National</MenuItem>
+          <MenuList minWidth="240px" color={"black"} bgColor="#DCF2F1">
+            <MenuOptionGroup
+              fontSize={"17px"}
+              align="center"
+              title="Research Excellence"
+              type="checkbox"
+            >
+              <MenuOptionGroup defaultValue="asc" type="radio">
+                <MenuItem
+                  align="center"
+                  to="/categories/regionalResearch"
+                  value="desc"
+                >
+                  Regional
+                </MenuItem>
+                <MenuItem
+                  align="center"
+                  to="/categories/nationalResearch"
+                  value="asc"
+                >
+                  National
+                </MenuItem>
               </MenuOptionGroup>
             </MenuOptionGroup>
 
             <MenuDivider />
 
-            <MenuOptionGroup fontSize={'17px'} align="center" title='Academic Excellence' type='checkbox'>
-              <MenuOptionGroup defaultValue='asc' type='radio'>
-                <MenuItem align="center" to='/categories/regionalAcademic' value='desc'>Regional</MenuItem>
-                <MenuItem align="center" to='/categories/nationalAcademic' value='asc'>National</MenuItem>
+            <MenuOptionGroup
+              fontSize={"17px"}
+              align="center"
+              title="Academic Excellence"
+              type="checkbox"
+            >
+              <MenuOptionGroup defaultValue="asc" type="radio">
+                <MenuItem
+                  align="center"
+                  to="/categories/regionalAcademic"
+                  value="desc"
+                >
+                  Regional
+                </MenuItem>
+                <MenuItem
+                  align="center"
+                  to="/categories/nationalAcademic"
+                  value="asc"
+                >
+                  National
+                </MenuItem>
               </MenuOptionGroup>
             </MenuOptionGroup>
 
             <MenuDivider />
 
-
-            <MenuItem fontWeight={'bold'} align="center" to="/categories/industryExcellence" color={"black"}>Industry Excellence </MenuItem>
-
+            <MenuItem
+              fontWeight={"bold"}
+              align="center"
+              to="/categories/industryExcellence"
+              color={"black"}
+            >
+              Industry Excellence{" "}
+            </MenuItem>
 
             <MenuDivider />
 
-            <MenuItem fontWeight={'bold'} align="center" to="/categories/startupExcellence" color={"black"}>Startup Excellence</MenuItem>
-
-
+            <MenuItem
+              fontWeight={"bold"}
+              align="center"
+              to="/categories/startupExcellence"
+              color={"black"}
+            >
+              Startup Excellence
+            </MenuItem>
           </MenuList>
         </Menu>
 
-        <MenuItem as={Button} bgColor="gray" color={"black"} to="/imp">
+        <MenuItem as={Button} bgColor="#DCF2F1" color={"black"} to="/imp">
           Imp Dates
         </MenuItem>
 
         <Menu>
-          <MenuButton as={Button} bgColor="gray" color={"black"} rightIcon={<ChevronDownIcon />}>
+          <MenuButton
+            as={Button}
+            bgColor="#DCF2F1"
+            color={"black"}
+            rightIcon={<ChevronDownIcon />}
+          >
             Registration
           </MenuButton>
-          <MenuList minWidth='240px' color={"black"} bgColor="gray.100">
-            <MenuItem align="center" to="/categories/generalInstructions" color={"black"}>Instructions </MenuItem>
-            <MenuItem align="center" to="/register/regdet" color={"black"}>Registration Details </MenuItem>
-            <MenuItem align="center" to="/register" color={"black"}>Registration Form</MenuItem>
-            <MenuItem align="center" to="/register/paymentDetails" color={"black"}>Payment Details</MenuItem>
+          <MenuList minWidth="240px" color={"black"} bgColor="#DCF2F1">
+            <MenuItem
+              align="center"
+              to="/categories/generalInstructions"
+              color={"black"}
+            >
+              Instructions{" "}
+            </MenuItem>
+            <MenuItem align="center" to="/register/regdet" color={"black"}>
+              Registration Details{" "}
+            </MenuItem>
+            <MenuItem align="center" to="/register" color={"black"}>
+              Registration Form
+            </MenuItem>
+            <MenuItem
+              align="center"
+              to="/register/paymentDetails"
+              color={"black"}
+            >
+              Payment Details
+            </MenuItem>
           </MenuList>
         </Menu>
 
         <MenuItem to="/categories/generalInstructions">
-          <Button bgColor="gray" color={"black"}>
+          <Button bgColor="#DCF2F1" color={"black"}>
             Instructions
           </Button>
         </MenuItem>
@@ -166,15 +256,35 @@ const MenuLinks = ({ isopen }) => {
           </Button>
         </MenuItem> */}
 
-        
+        <Menu>
+          <MenuButton
+            as={Button}
+            bgColor="#DCF2F1"
+            color={"black"}
+            rightIcon={<ChevronDownIcon />}
+          >
+            Archives
+          </MenuButton>
+          <MenuList minWidth="240px" color={"black"} bgColor="gray.100">
+            <MenuItem align="center" color={"black"} to="/photo/index1">
+              Past Awardees
+            </MenuItem>
+            <MenuItem align="center" color={"black"} to="/photo/index2">
+              Past Award Ceremonies
+            </MenuItem>
 
-        <MenuItem as={Button} bgColor="gray" color={"black"} to="/photo/index1">
-          Past Awardees
-        </MenuItem>
-
-        <MenuItem as={Button} bgColor="gray" color={"black"} to="/photo/index2">
-          Past Award Ceremonies
-        </MenuItem>
+            {/* <MenuItem align="center" to="/register" color={"black"}>
+              Registration Form
+            </MenuItem>
+            <MenuItem
+              align="center"
+              to="/register/paymentDetails"
+              color={"black"}
+            >
+              Payment Details
+            </MenuItem> */}
+          </MenuList>
+        </Menu>
       </Stack>
     </Box>
   );
@@ -185,16 +295,22 @@ const NavBaContainer = ({ children, ...props }) => {
     <Flex
       as="nav"
       align="center"
-      justify="space-between"
+      paddingY={"1rem"}
+      paddingX={"0.5rem"}
+      alignItems={"center"}
+      justify="center"
       wrap="wrap"
       w="100%"
-      //   mb={4}
-      //   p={2}
-      //   bgImg={["bck.jpg"]}
-      bgColor={["gray"]}
+      bgColor={["#C4E4FF"]}
       color={["white", "white", "primary.700", "primary.700"]}
       {...props}
     >
+      {/* <Box paddingY={"0.5rem"}>
+        {/* <Text fontFamily={"seoge"} color={"black"}>
+          IEI
+        </Text> */}
+      {/* <Image src="/iei.png" width={75} height={75} />
+      </Box>{" "}  */}
       {children}
     </Flex>
   );

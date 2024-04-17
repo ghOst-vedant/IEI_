@@ -57,10 +57,16 @@ export default function Home() {
         <Flex>
           <Flex color={"white"}> .</Flex>
           <Flex width={"100%"}>
-            <Box width={"100%"} boxShadow="outline" p="6" rounded="md">
+            <Box
+              width={"95%"}
+              boxShadow="outline"
+              p="6"
+              rounded="md"
+              margin="auto"
+            >
               <Text
                 fontWeight="bold"
-                bgColor={"telegram.300"}
+                bgColor={"#B4D4FF"}
                 borderRadius={"0.15rem"}
                 padding={"0.25rem"}
               >
@@ -136,7 +142,7 @@ export default function Home() {
           <Card
             aboutName={"About IEI-NMLC FCRIT Awards "}
             texts={
-              "It is with great pleasure that Agnel Charities Fr. C. Rodrigues Institute of Technology (FCRIT) in collaboration with The Institute of Engineers, India Navi Mumbai Local Centre NMLC) is announcing the IEI NMLC FCRIT Excellence Awards 2023 . The objective of the award ceremony is to recognize and appreciate the excellence of academicians and Industry professionals in their respective domains. We are glad to inform that IEI NMLC FCRIT Excellence Awards organized in the years 2019, 2021 and 2022 received overwhelming responses and have been very successful."
+              "It is with great pleasure that Agnel Charities Fr. C. Rodrigues Institute of Technology (FCRIT) in collaboration with The Institute of Engineers, India Navi Mumbai Local Centre NMLC) is announcing the IEI NMLC FCRIT Excellence Awards 2023 . The objective of the award ceremony is to recognize and appreciate the excellence of academicians and Industry professionals in their respective domains. We are glad to inform that IEI NMLC FCRIT Excellence Awards organized in the years 2019, 2021, 2022 and 2023 received overwhelming responses and have been very successful."
             }
           />
           <Card

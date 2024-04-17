@@ -1,11 +1,8 @@
 import React from "react";
-import { Link, Box,Head, Flex, Text, Heading, Stack } from "@chakra-ui/react";
+import { Link, Box, Head, Flex, Text, Heading, Stack } from "@chakra-ui/react";
 import Logo from "./Logo";
 import Logos from "./Logos";
 // import '../../styles/Home.module.css';
-
-
-
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -13,28 +10,75 @@ const NavBar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    
     <NavBarContainer {...props}>
-      <Logo/>
+      <Logo />
       {/* <Text fontWeight={"bold"}><p align="center" >IEI</p></Text> */}
-      <div className="main-text" align="center" >
-      <Heading id="herofont" marginStart={"100"} fontSize={"5xl"} fontFamily={"fantasy"} style={{fontFamily:'Old English Text MT'}} color="rgb(0, 0, 102)" align={"center"}> The Institution of Engineers (India) </Heading>
-      <Text marginStart={"100"} fontSize={"2xl"} fontWeight={"bold"} color="blueviolet" align={"center"}> Navi Mumbai Local Centre </Text>
-      {/* <Text fontWeight={"bold"} color="black" align={"center"}>Vibration Engineering, Science, and Technology (INVEST 22)</Text> */}
-      <Text marginStart={"100"} fontSize={"2xl"} fontWeight={"bold"} color="black" align={"center"}>And</Text>
-        <Text marginStart={"100"} fontSize={"2xl"} fontWeight={"bold"} color="black" align={"center"}>Agnel Charities'
-Fr. C. Rodrigues Institute of Technology</Text>
-        <Text marginStart={"100"} fontSize={"2xl"} fontWeight={"bold"} color="black" align={"center"}>Jointly Presents</Text>
-        <Heading color="blue.800" marginStart={"100"} fontSize="5xl" fontWeight="extrabold" align="center">IEI NMLC - FCRIT EXCELLENCE AWARDS</Heading>
+      <div className="main-text" align="center">
+        <Heading
+          id="herofont"
+          marginStart={"100"}
+          fontSize={"5xl"}
+          fontFamily={"fantasy"}
+          style={{ fontFamily: "Old English Text MT" }}
+          color="rgb(0, 0, 102)"
+          align={"center"}
+        >
+          {" "}
+          The Institution of Engineers (India){" "}
+        </Heading>
+        <Text
+          marginStart={"100"}
+          fontSize={"2xl"}
+          fontWeight={"bold"}
+          color="blueviolet"
+          align={"center"}
+        >
+          {" "}
+          Navi Mumbai Local Centre{" "}
+        </Text>
+        {/* <Text fontWeight={"bold"} color="black" align={"center"}>Vibration Engineering, Science, and Technology (INVEST 22)</Text> */}
+        <Text
+          marginStart={"100"}
+          fontSize={"2xl"}
+          fontWeight={"bold"}
+          color="black"
+          align={"center"}
+        >
+          And
+        </Text>
+        <Text
+          marginStart={"100"}
+          fontSize={"2xl"}
+          fontWeight={"bold"}
+          color="black"
+          align={"center"}
+        >
+          Agnel Charities' Fr. C. Rodrigues Institute of Technology
+        </Text>
+        <Text
+          marginStart={"100"}
+          fontSize={"2xl"}
+          fontWeight={"bold"}
+          color="black"
+          align={"center"}
+        >
+          Jointly Presents
+        </Text>
+        <Heading
+          color="blue.800"
+          marginStart={"100"}
+          fontSize="5xl"
+          fontWeight="extrabold"
+          align="center"
+        >
+          IEI NMLC - FCRIT EXCELLENCE AWARDS
+        </Heading>
       </div>
       <Logos />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
   );
 };
-
-
-
 
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
   return (
@@ -58,8 +102,7 @@ const MenuLinks = ({ isOpen }) => {
         justify={["center", "space-between", "flex-end", "flex-end"]}
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
-      >
-      </Stack>
+      ></Stack>
     </Box>
   );
 };
@@ -72,7 +115,8 @@ const NavBarContainer = ({ children, ...props }) => {
       justify="space-between"
       wrap="wrap"
       w="100%"
-      mb={8}
+      // mb={1}
+      borderBottom={"2px solid #DFF5FF"}
       p={8}
       bgImg={["bck.jpg"]}
       color={["white", "white", "primary.700", "primary.700"]}
