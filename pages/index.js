@@ -134,35 +134,115 @@ export default function Home() {
         <SimpleGrid
           bgColor={"telegram.700"}
           paddingTop="20"
+          paddingX={"20"}
           paddingBottom="20"
           columns={2}
           spacingX="50px"
           spacingY="50px"
         >
-          <Card
-            aboutName={"About IEI-NMLC FCRIT Awards "}
-            texts={
-              "It is with great pleasure that Agnel Charities Fr. C. Rodrigues Institute of Technology (FCRIT) in collaboration with The Institute of Engineers, India Navi Mumbai Local Centre NMLC) is announcing the IEI NMLC FCRIT Excellence Awards 2023 . The objective of the award ceremony is to recognize and appreciate the excellence of academicians and Industry professionals in their respective domains. We are glad to inform that IEI NMLC FCRIT Excellence Awards organized in the years 2019, 2021, 2022 and 2023 received overwhelming responses and have been very successful."
-            }
-          />
-          <Card
-            aboutName={"About The Institution of Engineers (India) "}
-            texts={
-              "The Institution of Engineers (India) [IEI] is the largest multidisciplinary professional body of engineers, established in 1920 with its Headquarters located in Kolkata and incorporated under Royal Charter on 9th September,1935 by the then His Majesty of King George V. The Royal Charter endowed the Institution with the responsibility to promote the general advancement of engineering amongst its members and persons attached to the Institution. The Institution is protected under Article 372 of the Constitution of India                "
-            }
-          />
-          <Card
-            aboutName={"About IEI-NMLC Local Center"}
-            texts={
-              "The Council of IEI had set up Navi Mumbai Local Centre (NMLC), formerly called as Belapur Local Centre (BLC), in May 1994. Ever since its inception, NMLC is vibrant with active participation from its office bearers and ever-increasing members. NMLC is situated in a 1000 sq. meters plot in Sector 15, Central Business District (CBD), close to Belapur Railway Station in Navi Mumbai. NMLC Building was designed by the reputed architects, M/s. Shashi Prabhu & Associates and M/s. Sopan Parbhu Architect. It consists of stilt with 5 floors. At present, IEI-NMLC has 3687 members comprising of engineers from 15 Divisions."
-            }
-          />
-          <Card
-            aboutName={"About FCRIT "}
-            texts={
-              "FCRIT was established in 1994, named after late Rev. Fr. Conceicao Rodrigues. FCRIT persistently seeks and adopts innovative methods to improve the quality of education on a consistent basis. The global standards set at FCRIT in the field of teaching spurs the students in relentless pursuit of excellence. Though its reputation rests mainly on the high quality, value-based technical education that it imparts, it has to its credit a verdant, well-maintained campus and extensive facilities. Its location in the vicinity of the holy places of various religious denominations underscores its secular credentials and its philosophy of Vasudhaiva Kuttumbakam. The institute prides on being one of few that has accreditation for all five branches by National Board of Accreditation (NBA) and graded by NAAC. The Institute has also received the Best College Award in Urban Category from Mumbai University."
-            }
-          />
+          <Box
+            padding={"4rem"}
+            bgColor={"white"}
+            borderRadius={"1.5rem"}
+            shadow={"2xl"}
+            display={"flex"}
+            gap={"3"}
+            flexDirection={"column"}
+          >
+            <Heading fontSize="2xl" textAlign={"center"}>
+              About IEI-NMLC FCRIT Awards
+            </Heading>
+            <Text align={"center"} fontSize={"19px"}>
+              It is with great pleasure that Agnel Charities Fr. C. Rodrigues
+              Institute of Technology (FCRIT) in collaboration with The
+              Institute of Engineers, India Navi Mumbai Local Centre NMLC is
+              announcing the IEI NMLC FCRIT Excellence Awards 2023 . The
+              objective of the award ceremony is to recognize and appreciate the
+              excellence of academicians and Industry professionals in their
+              respective domains. We are glad to inform that IEI NMLC FCRIT
+              Excellence Awards organized in the years 2019, 2021, 2022 and 2023
+              received overwhelming responses and have been very successful.
+            </Text>
+          </Box>
+          <Box
+            padding={"4rem"}
+            bgColor={"white"}
+            borderRadius={"1.5rem"}
+            shadow={"2xl"}
+            display={"flex"}
+            gap={"3"}
+            flexDirection={"column"}
+          >
+            <Heading fontSize="2xl" textAlign="center">
+              About The Institution of Engineers (India){" "}
+            </Heading>
+            <Text align={"center"} fontSize={"19px"}>
+              The Institution of Engineers (India) [IEI] is the largest
+              multidisciplinary professional body of engineers, established in
+              1920 with its Headquarters located in Kolkata and incorporated
+              under Royal Charter on 9th September,1935 by the then His Majesty
+              of King George V. The Royal Charter endowed the Institution with
+              the responsibility to promote the general advancement of
+              engineering amongst its members and persons attached to the
+              Institution. The Institution is protected under Article 372 of the
+              Constitution of India
+            </Text>
+          </Box>
+          <Box
+            padding={"4rem"}
+            bgColor={"white"}
+            borderRadius={"1.5rem"}
+            shadow={"2xl"}
+            display={"flex"}
+            gap={"3"}
+            flexDirection={"column"}
+          >
+            <Heading fontSize="2xl" textAlign={"center"}>
+              About IEI-NMLC Local Center
+            </Heading>
+            <Text align={"center"} fontSize={"19px"}>
+              The Council of IEI had set up Navi Mumbai Local Centre (NMLC),
+              formerly called as Belapur Local Centre (BLC), in May 1994. Ever
+              since its inception, NMLC is vibrant with active participation
+              from its office bearers and ever-increasing members. NMLC is
+              situated in a 1000 sq. meters plot in Sector 15, Central Business
+              District (CBD), close to Belapur Railway Station in Navi Mumbai.
+              NMLC Building was designed by the reputed architects, M/s. Shashi
+              Prabhu & Associates and M/s. Sopan Parbhu Architect. It consists
+              of stilt with 5 floors. At present, IEI-NMLC has 3687 members
+              comprising of engineers from 15 Divisions.
+            </Text>
+          </Box>
+          <Box
+            padding={"4rem"}
+            bgColor={"white"}
+            borderRadius={"1.5rem"}
+            shadow={"2xl"}
+            display={"flex"}
+            gap={"3"}
+            flexDirection={"column"}
+          >
+            <Heading fontSize="2xl" textAlign={"center"}>
+              About FCRIT
+            </Heading>
+            <Text align={"center"} fontSize={"19px"}>
+              FCRIT was established in 1994, named after late Rev. Fr. Conceicao
+              Rodrigues. FCRIT persistently seeks and adopts innovative methods
+              to improve the quality of education on a consistent basis. The
+              global standards set at FCRIT in the field of teaching spurs the
+              students in relentless pursuit of excellence. Though its
+              reputation rests mainly on the high quality, value-based technical
+              education that it imparts, it has to its credit a verdant,
+              well-maintained campus and extensive facilities. Its location in
+              the vicinity of the holy places of various religious denominations
+              underscores its secular credentials and its philosophy of
+              Vasudhaiva Kuttumbakam. The institute prides on being one of few
+              that has accreditation for all five branches by National Board of
+              Accreditation (NBA) and graded by NAAC. The Institute has also
+              received the Best College Award in Urban Category from Mumbai
+              University.
+            </Text>
+          </Box>
         </SimpleGrid>
         <br />
 
