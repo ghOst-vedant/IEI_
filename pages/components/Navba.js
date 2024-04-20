@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Link,
   Box,
   Flex,
   Text,
@@ -15,6 +14,7 @@ import {
   MenuDivider,
   Image,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 const NavBa = (props) => {
   const [isopen, setIsOpen] = React.useState(false);
@@ -70,9 +70,21 @@ const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
 };
 
 const MenuLinks = ({ isopen }) => {
-  // const handleButtonClick = () => {
-  //   window.open("/categories/generalInstructions",target="_blank");
-  // }
+  const downloadFile = () => {
+    const fileUrl = "/Brochure_IEI_Research_Awards_2024_r9.pdf";
+    fetch(fileUrl)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "example.pdf"; // Name of the file to be downloaded
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+      })
+      .catch((error) => console.error("Error downloading file:", error));
+  };
   return (
     <Box
       display={{ base: isopen ? "block" : "none", md: "block" }}
@@ -96,13 +108,69 @@ const MenuLinks = ({ isopen }) => {
             color={"black"}
             rightIcon={<ChevronDownIcon />}
           >
+            Brochure
+          </MenuButton>
+          {/* onClick={downloadFile} */}
+          <MenuList
+            minWidth="240px"
+            color={"black"}
+            bgColor="gray.100"
+            display="flex"
+            flexDirection={"column"}
+            gap="1"
+            align="center"
+          >
+            <a
+              color={"black"}
+              href="/Brochure_IEI_Research_Awards_2024_r9.pdf"
+              target="_blank"
+              className="unDerline"
+            >
+              Research Awards
+            </a>
+            <a
+              color={"black"}
+              href="/Brochure_IEI_Industry_Awards_2024_r9.pdf"
+              target="_blank"
+              className="unDerline"
+            >
+              Industry Awards
+            </a>
+            <a
+              color={"black"}
+              href="/Brochure_IEI_Academic_Awards_2024_r9.pdf"
+              target="_blank"
+              className="unDerline"
+            >
+              Academic Awards
+            </a>
+          </MenuList>
+        </Menu>
+
+        <Menu>
+          <MenuButton
+            as={Button}
+            bgColor="#DCF2F1"
+            color={"black"}
+            rightIcon={<ChevronDownIcon />}
+          >
             Committees
           </MenuButton>
           <MenuList minWidth="240px" color={"black"} bgColor="gray.100">
-            <MenuItem align="center" to="/committees/adv" color={"black"}>
+            <MenuItem
+              align="center"
+              to="/committees/adv"
+              color={"black"}
+              className="unDerline"
+            >
               Advisory Committee{" "}
             </MenuItem>
-            <MenuItem align="center" to="/committees" color={"black"}>
+            <MenuItem
+              align="center"
+              to="/committees"
+              color={"black"}
+              className="unDerline"
+            >
               Organising Committee{" "}
             </MenuItem>
           </MenuList>
@@ -141,6 +209,7 @@ const MenuLinks = ({ isopen }) => {
                   align="center"
                   to="/categories/regionalResearch"
                   value="desc"
+                  className="unDerline"
                 >
                   Regional
                 </MenuItem>
@@ -148,6 +217,7 @@ const MenuLinks = ({ isopen }) => {
                   align="center"
                   to="/categories/nationalResearch"
                   value="asc"
+                  className="unDerline"
                 >
                   National
                 </MenuItem>
@@ -167,6 +237,7 @@ const MenuLinks = ({ isopen }) => {
                   align="center"
                   to="/categories/regionalAcademic"
                   value="desc"
+                  className="unDerline"
                 >
                   Regional
                 </MenuItem>
@@ -174,6 +245,7 @@ const MenuLinks = ({ isopen }) => {
                   align="center"
                   to="/categories/nationalAcademic"
                   value="asc"
+                  className="unDerline"
                 >
                   National
                 </MenuItem>
@@ -187,6 +259,7 @@ const MenuLinks = ({ isopen }) => {
               align="center"
               to="/categories/industryExcellence"
               color={"black"}
+              className="unDerline"
             >
               Industry Excellence{" "}
             </MenuItem>
@@ -198,6 +271,7 @@ const MenuLinks = ({ isopen }) => {
               align="center"
               to="/categories/startupExcellence"
               color={"black"}
+              className="unDerline"
             >
               Startup Excellence
             </MenuItem>
@@ -222,19 +296,31 @@ const MenuLinks = ({ isopen }) => {
               align="center"
               to="/categories/generalInstructions"
               color={"black"}
+              className="unDerline"
             >
               Instructions{" "}
             </MenuItem>
-            <MenuItem align="center" to="/register/regdet" color={"black"}>
+            <MenuItem
+              align="center"
+              to="/register/regdet"
+              color={"black"}
+              className="unDerline"
+            >
               Registration Details{" "}
             </MenuItem>
-            <MenuItem align="center" to="/register" color={"black"}>
+            <MenuItem
+              align="center"
+              to="/register"
+              color={"black"}
+              className="unDerline"
+            >
               Registration Form
             </MenuItem>
             <MenuItem
               align="center"
               to="/register/paymentDetails"
               color={"black"}
+              className="unDerline"
             >
               Payment Details
             </MenuItem>
@@ -266,10 +352,20 @@ const MenuLinks = ({ isopen }) => {
             Archives
           </MenuButton>
           <MenuList minWidth="240px" color={"black"} bgColor="gray.100">
-            <MenuItem align="center" color={"black"} to="/photo/index1">
+            <MenuItem
+              align="center"
+              color={"black"}
+              to="/photo/index1"
+              className="unDerline"
+            >
               Past Awardees
             </MenuItem>
-            <MenuItem align="center" color={"black"} to="/photo/index2">
+            <MenuItem
+              align="center"
+              color={"black"}
+              to="/photo/index2"
+              className="unDerline"
+            >
               Past Award Ceremonies
             </MenuItem>
 

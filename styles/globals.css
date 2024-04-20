@@ -2,17 +2,18 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: AngicanText, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    
-    
+  font-family: AngicanText, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
+.unDerline:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 /* Carousel {
   position: absolute;
   left: auto;
@@ -20,7 +21,7 @@ a {
   height: 600px;
 } */
 
-.carousel-img{
+.carousel-img {
   width: auto;
   height: 75vh;
   background-color: black;
@@ -30,5 +31,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-

@@ -111,7 +111,12 @@ export default function Home() {
         <br />
         <br />
         <br />
-        <Flex overflow={"hidden"} alignContent={"center"} marginRight={"full"}>
+        <Flex
+          overflow={"hidden"}
+          alignContent={"center"}
+          marginRight={"full"}
+          justifyContent={"center"}
+        >
           <Carousel
             width={"100%"}
             showThumbs={false}
@@ -152,7 +157,7 @@ export default function Home() {
             <Heading fontSize="2xl" textAlign={"center"}>
               About IEI-NMLC FCRIT Awards
             </Heading>
-            <Text align={"center"} fontSize={"19px"}>
+            <Text align={"center"} fontSize={"19px"} textAlign={"justify"}>
               It is with great pleasure that Agnel Charities Fr. C. Rodrigues
               Institute of Technology (FCRIT) in collaboration with The
               Institute of Engineers, India Navi Mumbai Local Centre NMLC is
@@ -176,7 +181,7 @@ export default function Home() {
             <Heading fontSize="2xl" textAlign="center">
               About The Institution of Engineers (India){" "}
             </Heading>
-            <Text align={"center"} fontSize={"19px"}>
+            <Text align={"center"} fontSize={"19px"} textAlign={"justify"}>
               The Institution of Engineers (India) [IEI] is the largest
               multidisciplinary professional body of engineers, established in
               1920 with its Headquarters located in Kolkata and incorporated
@@ -200,7 +205,7 @@ export default function Home() {
             <Heading fontSize="2xl" textAlign={"center"}>
               About IEI-NMLC Local Center
             </Heading>
-            <Text align={"center"} fontSize={"19px"}>
+            <Text align={"center"} fontSize={"19px"} textAlign={"justify"}>
               The Council of IEI had set up Navi Mumbai Local Centre (NMLC),
               formerly called as Belapur Local Centre (BLC), in May 1994. Ever
               since its inception, NMLC is vibrant with active participation
@@ -225,7 +230,7 @@ export default function Home() {
             <Heading fontSize="2xl" textAlign={"center"}>
               About FCRIT
             </Heading>
-            <Text align={"center"} fontSize={"19px"}>
+            <Text align={"center"} fontSize={"19px"} textAlign={"justify"}>
               FCRIT was established in 1994, named after late Rev. Fr. Conceicao
               Rodrigues. FCRIT persistently seeks and adopts innovative methods
               to improve the quality of education on a consistent basis. The
