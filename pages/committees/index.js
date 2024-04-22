@@ -23,7 +23,7 @@ export default function Home() {
       <br />
       <SimpleGrid
         paddingBottom="20"
-        columns={2}
+        columns={3}
         spacingX="20px"
         spacingY="20px"
       >
@@ -31,22 +31,32 @@ export default function Home() {
           des1={"Chair,"}
           des2={"IEI NMLC FCRIT Excellence "}
           des3={"Award"}
-          des4={"Managing Committee  "}
-          des5={"Member,(IEI NMLC)"}
-          des6={"Dean (Faculty) and Head "}
-          des7={"(Mech),FCRIT, Vashi"}
-          personName={"Dr. Nilaj Deshmukh"}
-          image="/photos/dr-nilaj-deshmukh.jpeg"
+          des4={"HOD (EXTC),"}
+          // des5={"Member,(IEI NMLC)"}
+          // des6={"Dean (Faculty) and Head "}
+          des5={"(Mech),FCRIT, Vashi"}
+          personName={"Dr. Megha Kolhekar"}
+          image=""
         />
         <Card
           des1={"Co-Chair,"}
           des2={"IEI NMLC FCRIT Excellence "}
           des3={"Award"}
-          personName={"Dr. M. Kiruthika"}
-          des4={"Associate Professor, Comp.  "}
+          personName={"Dr. Jyoti More"}
+          des4={"Associate Professor, Comp. "}
           des5={"Engg. Dept.,"}
           des6={"FCRIT, Vashi"}
-          image="/photos/km.jpg"
+          image=""
+        />
+        <Card
+          des1={"Co-Chair,"}
+          des2={"IEI NMLC FCRIT Excellence "}
+          des3={"Award"}
+          personName={"Er. S. P. Singh"}
+          des4={"HOD-Marketing and BD,  "}
+          des5={"Certification Engineers"}
+          des6={" International Ltd"}
+          image=""
         />
       </SimpleGrid>
       <br />

@@ -88,7 +88,7 @@ export default function Homie() {
         <Card
           personName={"Dr. Sushil Thale"}
           des4={"Dean (R&D and Industry Liasoning), FCRIT,Vashi "}
-          // image="/photos/mohan.jpg"
+          image="/photos/Thale.png"
         />
         <Card
           personName={"Er. K. K.Verkhedkar"}
@@ -108,7 +108,7 @@ export default function Homie() {
         <Card
           personName={"Dr. Aqleem Siddiqui"}
           des4={"Head(Mechanical Engg), FCRIT,Vashi"}
-          // image="/photos/KK-varkhedkar.jpeg"
+          image="/photos/aqleem.png"
         />
         <Card
           personName={"Er. Jaswant N.Mistry"}
