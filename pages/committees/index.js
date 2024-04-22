@@ -36,7 +36,7 @@ export default function Home() {
           // des6={"Dean (Faculty) and Head "}
           des5={"(Mech),FCRIT, Vashi"}
           personName={"Dr. Megha Kolhekar"}
-          image=""
+          image="/photos/megha.png"
         />
         <Card
           des1={"Co-Chair,"}
@@ -46,7 +46,7 @@ export default function Home() {
           des4={"Associate Professor, Comp. "}
           des5={"Engg. Dept.,"}
           des6={"FCRIT, Vashi"}
-          image=""
+          image="/photos/jyoti.png"
         />
         <Card
           des1={"Co-Chair,"}
