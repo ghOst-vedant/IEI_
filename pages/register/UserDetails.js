@@ -19,7 +19,6 @@ import {
   useToast,
 } from "@chakra-ui/react";
 
-
 import {
   Modal,
   ModalOverlay,
@@ -35,12 +34,10 @@ import { ViewIcon } from "@chakra-ui/icons";
 import { jsPDF } from "jspdf";
 import $, { merge } from "jquery";
 import AwardCategories from "./AwardCategories";
-import Gender from "./Gender"
+import Gender from "./Gender";
 import { useState } from "react";
-import axios from 'axios';
+import axios from "axios";
 import Category from "./Category";
-
-
 
 // const FormData = require('form-data');
 // const [email,setEmail]=useState('')
@@ -51,7 +48,7 @@ const Details = () => {
   const [fieldsPdf, setFieldsPdf] = useState(null);
   const [receiptPdf, setReceiptPdf] = useState(null);
   const [pdfUrl, setPdfUrl] = useState(null);
-  const [emailto, setEmail] = useState('');
+  const [emailto, setEmail] = useState("");
   const [fieldsUrl, setFieldsUrl] = useState(null);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const toast = useToast();
@@ -70,17 +67,24 @@ const Details = () => {
     var dept = $("#department").val().trim();
     var insti = $("#institute").val().trim();
     var award = $("#Category").val().trim();
-    var email = $('#email').val().trim();
-    var gender = $('#Gender').val().trim();
+    var email = $("#email").val().trim();
+    var gender = $("#Gender").val().trim();
     // console.log("Verifying fields ");
-    if (applicantName == '' || dept == '' || insti == '' || award == '' | pdfUrl == null || receiptPdf == null || !checkVal || !checkVal2) {
+    if (
+      applicantName == "" ||
+      dept == "" ||
+      insti == "" ||
+      (award == "") | (pdfUrl == null) ||
+      receiptPdf == null ||
+      !checkVal ||
+      !checkVal2
+    ) {
       return false;
     }
     return true;
   }
 
-
-  console.log(emailto)
+  console.log(emailto);
   async function send() {
     var formData = new FormData();
     formData.append("userDoc", receiptPdf);
@@ -95,17 +99,14 @@ const Details = () => {
     try {
       const res = await fetch("https://tonythomas.xyz/mergepdf", {
         method: "POST",
-        body: formData
+        body: formData,
       }).then((res) => {
         if (res.status != 202) {
           alert("Form submitted Successfully !!!");
           console.log("Success");
           window.location.reload(false);
-          console.log(res);
-        }
-        else {
+        } else {
           alert("Please Resubmit Form!!!");
-          console.log("Error", res.json());
         }
       });
     } catch (err) {
@@ -129,16 +130,15 @@ const Details = () => {
     var dept = $("#department").val().trim();
     var insti = $("#institute").val().trim();
     var award = $("#Category").val().trim();
-    var category=$("#Categoryspecify").val().trim();
-    var gender=$("#Gender").val().trim();
-    var contact = $('#contactNo').val().trim();
-    var email = $('#email').val().trim();
+    var category = $("#Categoryspecify").val().trim();
+    var gender = $("#Gender").val().trim();
+    var contact = $("#contactNo").val().trim();
+    var email = $("#email").val().trim();
     var role = $("#SelectOptions").find("#applicant-role").val();
     doc.text(20, 20, "Name : " + applicantName);
     if (sem.length != 0) {
       doc.text(20, 30, "Semester : " + sem);
-    }
-    else {
+    } else {
       doc.text(20, 30, "Semester : Not filled");
     }
     doc.text(20, 40, "Department : " + dept);
@@ -146,7 +146,7 @@ const Details = () => {
     doc.text(20, 60, "Award Category : " + award);
     doc.text(20, 70, "Category : " + category);
     doc.text(20, 80, "Contact Details (Mobile Number and Email) : " + contact);
-    doc.text(20,90,"Gender : " + gender);
+    doc.text(20, 90, "Gender : " + gender);
     doc.text(20, 100, "Email Details (Email) : " + email);
     if (!(typeof role === "undefined")) {
       doc.text(20, 110, "Applicant Role : " + role);
@@ -162,7 +162,7 @@ const Details = () => {
   const handleReceipt = (e) => {
     e.preventDefault();
     setReceiptPdf(e.target.files[0]);
-  }
+  };
   const checkBoxChange = (e) => {
     e.preventDefault();
     setCheckVal(!checkVal);
@@ -170,7 +170,7 @@ const Details = () => {
   const handleCheckDecision = (e) => {
     e.preventDefault();
     setCheckVal2(!checkVal2);
-  }
+  };
 
   // const sendEmail = async () => {
   //     // const email = document.getElementById("email").value;
@@ -186,15 +186,6 @@ const Details = () => {
   //       .then((data) => console.log(data))
   //       .catch((error) => console.error(error));
   //   }
-
-
-
-
-
-
-
-
-
 
   return (
     <Box>
@@ -219,7 +210,7 @@ const Details = () => {
               <Heading textColor={secondaryTextColor} size="2xl">
                 Registration/Proposal Submission Form
               </Heading>
-              <Text fontSize={'20px'} textColor={secondaryTextColor}>
+              <Text fontSize={"20px"} textColor={secondaryTextColor}>
                 Upload the proposal with all the supporting documents.
               </Text>
             </GridItem>
@@ -263,7 +254,6 @@ const Details = () => {
               <Gender isRequired />
             </GridItem>
 
-
             <GridItem colSpan={2}>
               <FormControl isRequired>
                 <FormLabel textColor={secondaryTextColor}>
@@ -275,14 +265,15 @@ const Details = () => {
 
             <GridItem colSpan={2}>
               <FormControl isRequired>
-                <FormLabel textColor={secondaryTextColor} >
-                  Email Id
-                </FormLabel>
-                <Input id="email" value={emailto} onChange={(e) => setEmail(e.target.value)} />
+                <FormLabel textColor={secondaryTextColor}>Email Id</FormLabel>
+                <Input
+                  id="email"
+                  value={emailto}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
                 {/* <Input id="email" type="email" onChange={updateEmail} /> */}
               </FormControl>
             </GridItem>
-
 
             <GridItem colSpan={2}>
               <AwardCategories isRequired />
@@ -295,7 +286,9 @@ const Details = () => {
             <GridItem id="SelectOptions" colSpan={2}></GridItem>
             <GridItem id="receiptPdf" colSpan={2}>
               <FormControl isRequired={true}>
-                <FormLabel>Upload Transaction Receipt here <b>(Upload pdf only)</b></FormLabel>
+                <FormLabel>
+                  Upload Transaction Receipt here <b>(Upload pdf only)</b>
+                </FormLabel>
                 <Input
                   isRequired
                   accept="application/pdf"
@@ -304,11 +297,10 @@ const Details = () => {
                   onChange={handleReceipt}
                 />
               </FormControl>
-
             </GridItem>
             <GridItem colSpan={1}>
               <FormControl isRequired={true}>
-                <FormLabel>Upload all documents as a single pdf here</FormLabel>
+                <FormLabel>Upload proposal as a single pdf here</FormLabel>
                 <Input
                   isRequired
                   accept="application/pdf"
@@ -373,7 +365,7 @@ const Details = () => {
               <GridItem colSpan={2}>
                 <FormControl isRequired>
                   <Checkbox onChange={handleCheckDecision} isRequired>
-                    I/We hereby agree to the final decision of  judges.
+                    I/We hereby agree to the final decision of judges.
                   </Checkbox>
                 </FormControl>
               </GridItem>
@@ -384,9 +376,8 @@ const Details = () => {
                 bgColor="green.500"
                 onClick={() => {
                   if (verify() == true) {
-                    send()
-                  }
-                  else {
+                    send();
+                  } else {
                     toast({
                       title: "Incomplete Form",
                       description: "Please Fill all the details",
@@ -395,8 +386,7 @@ const Details = () => {
                       isClosable: true,
                     });
                   }
-                }
-                }
+                }}
                 size="lg"
               >
                 Submit

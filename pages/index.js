@@ -161,13 +161,12 @@ export default function Home() {
               It is with great pleasure that Agnel Charities Fr. C. Rodrigues
               Institute of Technology (FCRIT) in collaboration with The
               Institute of Engineers, India Navi Mumbai Local Centre NMLC is
-              announcing the IEI NMLC FCRIT Excellence Awards 2023 . The
+              announcing the IEI NMLC FCRIT Excellence Awards 2024. The
               objective of the award ceremony is to recognize and appreciate the
               excellence of academicians and Industry professionals in their
               respective domains. We are glad to inform that IEI NMLC FCRIT
-              Excellence Awards organized in the years 2019, 2021, 2022, 2023
-              and 2024 received overwhelming responses and have been very
-              successful.
+              Excellence Awards organized in the years 2019, 2021, 2022 and 2023
+              received overwhelming responses and have been very successful.
             </Text>
           </Box>
           <Box
