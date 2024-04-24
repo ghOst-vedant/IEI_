@@ -56,7 +56,7 @@ export default function Home() {
           des4={"HOD-Marketing and BD,  "}
           des5={"Certification Engineers"}
           des6={" International Ltd"}
-          image=""
+          image="/photos/singh.JPG"
         />
       </SimpleGrid>
       <br />

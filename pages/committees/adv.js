@@ -71,7 +71,7 @@ export default function Homie() {
         <Card
           personName={"Dr. Kishanrao M. Godbole"}
           des4={"Imm. Past Chairman, IEI NMLC."}
-          // image="/photos/milind-shah.jpeg"
+          image="/photos/goodbole.jpeg"
         />
         <Card
           personName={"Dr. Lata Ragha"}

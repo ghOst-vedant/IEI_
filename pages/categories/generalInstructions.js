@@ -81,7 +81,7 @@ const generalInstructions = () => {
               {" "}
               Click here to view past proposals :{" "}
               <a
-                href="https://fcrit-my.sharepoint.com/:w:/g/personal/supportiei_fcrit_ac_in/ET9bHv2g1HdLrRitWfJtpMIB8Rjmha1juK_WgCQu69AmwQ?rtime=qpobs8Ji20g"
+                href="https://fcrit-my.sharepoint.com/:b:/g/personal/1021265_comp_fcrit_ac_in/EWyHBI8dafFAtsQgRgq3oAUBOJGzive5d0MNvieLjncFHw?e=dmNCJZ"
                 style={{ color: "blue" }}
                 target="_blank"
               >

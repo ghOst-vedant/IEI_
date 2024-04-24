@@ -47,7 +47,7 @@ export default function Home() {
       <Center>
         <Carousel
           width={"1150px"}
-          showThumbs={false}
+          showThumbs={true}
           autoPlay={true}
           interval={"5000"}
         >
@@ -108,7 +108,7 @@ export default function Home() {
       <Center>
         <Carousel
           width={"1150px"}
-          showThumbs={false}
+          showThumbs={true}
           autoPlay={true}
           interval={"5000"}
         >
@@ -157,7 +157,7 @@ export default function Home() {
       <Center>
         <Carousel
           width={"1150px"}
-          showThumbs={false}
+          showThumbs={true}
           autoPlay={true}
           interval={"5000"}
         >

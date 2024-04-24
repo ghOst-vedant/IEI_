@@ -165,8 +165,9 @@ export default function Home() {
               objective of the award ceremony is to recognize and appreciate the
               excellence of academicians and Industry professionals in their
               respective domains. We are glad to inform that IEI NMLC FCRIT
-              Excellence Awards organized in the years 2019, 2021, 2022 and 2023
-              received overwhelming responses and have been very successful.
+              Excellence Awards organized in the years 2019, 2021, 2022, 2023
+              and 2024 received overwhelming responses and have been very
+              successful.
             </Text>
           </Box>
           <Box

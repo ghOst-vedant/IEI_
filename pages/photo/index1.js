@@ -230,7 +230,7 @@ export default function Home() {
             <img src="/photos/2023_awardees/ppt66.jpg" alt="image4" />
           </div>
           <div>
-            <img src="/photos/2023_awardees/ppt67.jpg" alt="image4" />
+            <img src="/photos/2023_awardees/ppt67.png" alt="image4" />
           </div>
           <div>
             <img src="/photos/2023_awardees/ppt68.jpg" alt="image4" />
