@@ -90,7 +90,7 @@ export default function Home() {
             <td>Publicity</td>
             <td>Dr. Dhananjay P.</td>
             <td>
-              Dr. Bharat S. <br />
+              Dr. Afzal A. <br />
               Mr. Mritunjay O. <br />
               Ms. Ruchi H.
               <br />

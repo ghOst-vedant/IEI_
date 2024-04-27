@@ -173,7 +173,7 @@ const Details = () => {
   };
 
   // const sendEmail = async () => {
-  //     // const email = document.getElementById("email").value;
+  //     const email = document.getElementById("email").value;
   //     console.log(emailto)
   //     await fetch("http://localhost:3000/email", {
   //       method: "POST",
@@ -210,8 +210,10 @@ const Details = () => {
               <Heading textColor={secondaryTextColor} size="2xl">
                 Registration/Proposal Submission Form
               </Heading>
-              <Text fontSize={"20px"} textColor={secondaryTextColor}>
-                Upload the proposal with all the supporting documents.
+              <Text fontSize={"20px"} textColor={secondaryTextColor} mt={2}>
+                All candidates are requested to upload their nomination (in the
+                prescribed format) within two days of registration fees paymet
+                for ease of functioning.
               </Text>
             </GridItem>
             <GridItem colSpan={2}>
