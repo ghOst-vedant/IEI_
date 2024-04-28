@@ -30,7 +30,7 @@ export default function Home() {
         <Card
           des1={"Chair,"}
           des2={"IEI NMLC FCRIT Excellence "}
-          des3={"Award"}
+          des3={"Awards"}
           des4={"HOD (EXTC),"}
           // des5={"Member,(IEI NMLC)"}
           // des6={"Dean (Faculty) and Head "}
@@ -41,7 +41,7 @@ export default function Home() {
         <Card
           des1={"Co-Chair,"}
           des2={"IEI NMLC FCRIT Excellence "}
-          des3={"Award"}
+          des3={"Awards"}
           personName={"Dr. Jyoti More"}
           des4={"Associate Professor, Comp. "}
           des5={"Engg. Dept.,"}
@@ -51,7 +51,7 @@ export default function Home() {
         <Card
           des1={"Co-Chair,"}
           des2={"IEI NMLC FCRIT Excellence "}
-          des3={"Award"}
+          des3={"Awards"}
           personName={"Er. S. P. Singh"}
           des4={"HOD-Marketing and BD,  "}
           des5={"Certification Engineers"}
@@ -72,7 +72,7 @@ export default function Home() {
           <tr>
             <td>1.</td>
             <td>Venue and media</td>
-            <td>Mrs. Archana S.</td>
+            <td>Mrs. Lakshmi Gadhikar</td>
             <td>
               {" "}
               Ms. Amruta P.
@@ -90,7 +90,8 @@ export default function Home() {
             <td>Publicity</td>
             <td>Dr. Dhananjay P.</td>
             <td>
-              Dr. Afzal A. <br />
+              Mr. Arif
+              <br />
               Mr. Mritunjay O. <br />
               Ms. Ruchi H.
               <br />

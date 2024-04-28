@@ -821,6 +821,12 @@ const generalInstructions = () => {
         <Center color="black" fontSize="xl" marginLeft="270px">
           <ol>
             <li>
+              Teaching faculty with adhoc/temporary/non-regular/on contract
+              appointment is eligible to apply if the nominee is working with
+              currently affiliated Institute for at least three years. Templates
+              need to be uploaded for different categories.
+            </li>
+            <li>
               Candidates who are Indian citizens, fulfill the entry level
               criteria mentioned for each category,and candidates who satisfy
               the norm of current affiliation.{" "}

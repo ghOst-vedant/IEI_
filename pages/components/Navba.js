@@ -341,7 +341,9 @@ const MenuLinks = ({ isopen }) => {
             Result Announcement
           </Button>
         </MenuItem> */}
-
+        <MenuItem as={Button} bgColor="#DCF2F1" color={"black"} to="/templates">
+          Templates
+        </MenuItem>
         <Menu>
           <MenuButton
             as={Button}
@@ -368,17 +370,6 @@ const MenuLinks = ({ isopen }) => {
             >
               Past Award Ceremonies
             </MenuItem>
-
-            {/* <MenuItem align="center" to="/register" color={"black"}>
-              Registration Form
-            </MenuItem>
-            <MenuItem
-              align="center"
-              to="/register/paymentDetails"
-              color={"black"}
-            >
-              Payment Details
-            </MenuItem> */}
           </MenuList>
         </Menu>
       </Stack>

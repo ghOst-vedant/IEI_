@@ -79,7 +79,8 @@ export default function Home() {
               >
                 {/* <b style={{ fontSize: '17px' }}>Based on the request from participants we are extending the closing date by 31 July 2023. Hard copies will not be accepted. Sample Endorsement Letter : <a href="https://shorturl.at/loxJM" style={{ color: 'blue' }} target="_blank">https://shorturl.at/loxJM </a> The link for registering and uploading proposal: <a href="https://iei-ea.fcrit.ac.in/register" style={{ color: 'blue' }} target="_blank"><u>Check Here</u></a></b> */}
                 <b style={{ fontSize: "17px" }}>
-                  Registrations starting soon
+                  Registrations Started.... Kindly proceed within 2 days after
+                  the payment is successful
                   {/* <a
                     href="https://shorturl.at/sGRU2"
                     style={{ color: "blue" }}
@@ -88,6 +89,8 @@ export default function Home() {
                     https://shorturl.at/sGRU2
                   </a> */}
                 </b>
+
+                <b style={{ fontSize: "17px" }}></b>
               </marquee>
               {/* <b>  Results of IEI BLC - FCRIT excellence awards out !!! <a href="/ceremony/announcement" >Check Here</a> </b>
             <br />
@@ -158,9 +161,9 @@ export default function Home() {
               About IEI-NMLC FCRIT Awards
             </Heading>
             <Text align={"center"} fontSize={"19px"} textAlign={"justify"}>
-              It is with great pleasure that Agnel Charities Fr. C. Rodrigues
-              Institute of Technology (FCRIT) in collaboration with The
-              Institute of Engineers, India Navi Mumbai Local Centre NMLC is
+              It is with great pleasure that The Institute of Engineers, Navi
+              Mumbai Local Centre (NMLC) in collaboration with Agnel Charities'
+              Fr. C. Rodrigues Institute of Technology, Vashi, Navi Mumbai is
               announcing the IEI NMLC FCRIT Excellence Awards 2024. The
               objective of the award ceremony is to recognize and appreciate the
               excellence of academicians and Industry professionals in their
