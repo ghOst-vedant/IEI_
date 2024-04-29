@@ -187,7 +187,7 @@ const MenuLinks = ({ isopen }) => {
             <MenuItem to="/categories/startupExcellence" color={"black"}>Startup Excellence Award</MenuItem>
           </MenuList>
         </Menu> */}
-        <Menu>
+        {/* <Menu>
           <MenuButton
             as={Button}
             isOpen={"true"}
@@ -276,7 +276,7 @@ const MenuLinks = ({ isopen }) => {
               Startup Excellence
             </MenuItem>
           </MenuList>
-        </Menu>
+        </Menu> */}
 
         <MenuItem as={Button} bgColor="#DCF2F1" color={"black"} to="/imp">
           Imp Dates

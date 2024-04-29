@@ -119,7 +119,7 @@ export default function Home() {
             <td>
               Mr. Abhishek S.
               <br />
-              Ms. Smitha R. <br />
+              Ms. Smita R. <br />
               Mr. Vipin Sawant
             </td>
           </tr>

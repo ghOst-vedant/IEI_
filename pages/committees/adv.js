@@ -48,12 +48,12 @@ export default function Homie() {
           image="/photos/peter.JPG"
         />
         <Card
-          personName={"Cdr.Dr.B.Bhandarkar "}
+          personName={"Cdr.Dr. B. Bhandarkar "}
           des4={"IEI Council Member"}
           image="/photos/mr_bhandarkar.jpeg"
         />
         <Card
-          personName={"Dr. S M  Khot"}
+          personName={"Dr. S. M.  Khot"}
           des4={"Principal, FCRIT Vashi"}
           image="/photos/sm-khot.jpeg"
         />
@@ -80,7 +80,7 @@ export default function Homie() {
           image="/photos/lata.jpeg"
         /> */}
         <Card
-          personName={"Dr. M.B. Dagaonkar"}
+          personName={"Dr. M. B. Dagaonkar"}
           des4={"Past Council Member, IEI "}
           des5={"Past Chairman IEI MSC "}
           image="/photos/mohan.jpg"
@@ -91,7 +91,7 @@ export default function Homie() {
           image="/photos/Thale.png"
         />
         <Card
-          personName={"Er. K. K.Verkhedkar"}
+          personName={"Er. K. K. Verkhedkar"}
           des4={"Imm. Past Chairman, IEI NMLC."}
           image="/photos/KK-varkhedkar.jpeg"
         />
@@ -111,12 +111,12 @@ export default function Homie() {
           image="/photos/aqleem.png"
         />
         <Card
-          personName={"Er. Jaswant N.Mistry"}
+          personName={"Er. Jaswant N. Mistry"}
           des4={"Past Chairman, IEI NMLC"}
           image="/photos/mistry.jpeg"
         />
         <Card
-          personName={"Dr. Bindu S"}
+          personName={"Dr. Bindu S."}
           des4={"Dean (Student Affairs) and Head (Elec),FCRIT, Vashi"}
           image="/photos/Bindu.jpeg"
         />

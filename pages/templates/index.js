@@ -20,6 +20,9 @@ import Footer from "../components/Footer";
 import NavBa from "../components/Navba";
 import NextLink from "next/link";
 export default function Home() {
+  const handlepop = () => {
+    alert("Will be available soon.");
+  };
   return (
     <div>
       <Head>
@@ -249,6 +252,36 @@ export default function Home() {
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
                         Academic Excellence (HOD)
+                        <br />
+                      </Text>
+                    </Link>
+                  </NextLink>
+                </Td>
+                <Td style={{ textAlign: "center", border: "1px solid black" }}>
+                  <NextLink href="" passHref>
+                    <Link>
+                      <Text
+                        fontSize="2xl"
+                        fontWeight="bold"
+                        color="black"
+                        onClick={handlepop}
+                      >
+                        Startup Excellence
+                        <br />
+                      </Text>
+                    </Link>
+                  </NextLink>
+                </Td>
+                <Td style={{ textAlign: "center", border: "1px solid black" }}>
+                  <NextLink href="" passHref>
+                    <Link>
+                      <Text
+                        fontSize="2xl"
+                        fontWeight="bold"
+                        color="black"
+                        onClick={handlepop}
+                      >
+                        Industry Excellence
                         <br />
                       </Text>
                     </Link>
