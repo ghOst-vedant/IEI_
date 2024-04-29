@@ -75,7 +75,17 @@ const generalInstructions = () => {
               Uploading the screenshot of registration amount payment is
               mandatory
             </li>
-            <li> Proposal Document</li>
+            <li>
+              {" "}
+              Proposal Document in prescribed format :{" "}
+              <a
+                href="/templates"
+                className="templates"
+                style={{ color: "blue" }}
+              >
+                <u>Templates</u>
+              </a>
+            </li>
 
             <li>
               {" "}
