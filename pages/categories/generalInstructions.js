@@ -861,10 +861,6 @@ const generalInstructions = () => {
         <Center color="black" fontSize="xl" marginLeft="-20px">
           <ol>
             <li>
-              Faculty with a temporary affiliation or contract-based
-              appointment.
-            </li>
-            <li>
               Individuals or teams who have received any award from IEI or FCRIT
               in the same category as current, in the year 2023.{" "}
             </li>

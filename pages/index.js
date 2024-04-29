@@ -79,8 +79,9 @@ export default function Home() {
               >
                 {/* <b style={{ fontSize: '17px' }}>Based on the request from participants we are extending the closing date by 31 July 2023. Hard copies will not be accepted. Sample Endorsement Letter : <a href="https://shorturl.at/loxJM" style={{ color: 'blue' }} target="_blank">https://shorturl.at/loxJM </a> The link for registering and uploading proposal: <a href="https://iei-ea.fcrit.ac.in/register" style={{ color: 'blue' }} target="_blank"><u>Check Here</u></a></b> */}
                 <b style={{ fontSize: "17px" }}>
-                  Registrations Started.... Kindly proceed within 2 days after
-                  the payment is successful
+                  Registrations Started.... All candidates are requested to
+                  upload their nomination (in the prescribed format) within two
+                  days of registration fees paymet for ease of functioning.
                   {/* <a
                     href="https://shorturl.at/sGRU2"
                     style={{ color: "blue" }}
