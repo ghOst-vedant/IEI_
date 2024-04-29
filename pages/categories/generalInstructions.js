@@ -77,7 +77,7 @@ const generalInstructions = () => {
             </li>
             <li>
               {" "}
-              Nomination Document in prescribed format :{" "}
+              Nomination Templates in prescribed format :{" "}
               <a href="/templates" style={{ color: "blue" }}>
                 <u>Templates</u>
               </a>
