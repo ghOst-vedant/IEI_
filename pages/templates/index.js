@@ -248,7 +248,7 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Academic Excellence (HOD)26-4
+                        Academic Excellence (HOD)
                         <br />
                       </Text>
                     </Link>
