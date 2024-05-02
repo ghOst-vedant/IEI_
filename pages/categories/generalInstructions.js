@@ -82,13 +82,6 @@ const generalInstructions = () => {
                 <u>Templates</u>
               </a>
             </li>
-            <li style={{ background: "red" }}>
-              <p style={{ color: "white" }}>
-                Kindly note- The id proof, Institute id and Photo should be
-                embedded at the end of the nomination document
-              </p>
-            </li>
-
             <li>
               {" "}
               Click here to view past proposals :{" "}
@@ -111,6 +104,14 @@ const generalInstructions = () => {
               >
                 https://shorturl.at/loxJM{" "}
               </a>{" "}
+            </li>
+            <li>
+              <p style={{ color: "red" }}>
+                Kindly note- The id proof, Institute id, Endorsement letter,
+                Photo, IEI Membership document(if applicable) should be embedded
+                at the end of the nomination document. Upload entire document as
+                single pdf.
+              </p>
             </li>
           </ol>
         </Center>
