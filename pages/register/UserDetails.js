@@ -303,7 +303,7 @@ const Details = () => {
             <GridItem colSpan={1}>
               <FormControl isRequired={true}>
                 <FormLabel>
-                  Upload proposal as a single pdf here
+                  Upload nomination document as a single pdf here
                   <br />
                   The Please refer Proposal Templates uploaded in the Templates
                   tab{" "}
