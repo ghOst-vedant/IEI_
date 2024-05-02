@@ -82,6 +82,12 @@ const generalInstructions = () => {
                 <u>Templates</u>
               </a>
             </li>
+            <li style={{ background: "red" }}>
+              <p style={{ color: "white" }}>
+                Kindly note- The id proof, Institute id and Photo should be
+                embedded at the end of the nomination document
+              </p>
+            </li>
 
             <li>
               {" "}
