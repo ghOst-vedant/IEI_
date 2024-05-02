@@ -65,7 +65,7 @@ const generalInstructions = () => {
         </Center>
       </Text>
       <Text>
-        <Center color="black" fontSize="xl" marginRight="330px">
+        <Center color="black" fontSize="xl" ml={"15rem"} pr={"5rem"}>
           <ol>
             <li> Identity proof (Aadhar card preferably)</li>
             <li> Proof of affiliation (Institute ID card)</li>
