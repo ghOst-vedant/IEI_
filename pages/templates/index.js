@@ -48,11 +48,14 @@ export default function Home() {
           >
             <Tbody>
               <Tr>
-                <Td style={{ textAlign: "center", border: "1px solid black" }}>
+                <Td
+                  style={{ textAlign: "center", border: "1px solid black" }}
+                  colSpan={2}
+                >
                   {/* <NextLink href="/awardees.pdf" passHref>
                     <Link> */}
                   <Text fontSize="2xl" fontWeight="bold" color="black">
-                    Excellence <br />
+                    Research Excellence <br />
                   </Text>
                   {/* </Link>
                   </NextLink> */}
@@ -63,9 +66,10 @@ export default function Home() {
                   fontWeight="bold"
                   color="black"
                   style={{ textAlign: "center", border: "1px solid black" }}
+                  colSpan={2}
                 >
                   <Text fontSize="2xl" fontWeight="bold" color="black">
-                    RE Students
+                    Academic Excellance
                     <br />
                   </Text>
                 </Td>
@@ -75,9 +79,10 @@ export default function Home() {
                   fontWeight="bold"
                   color="black"
                   style={{ textAlign: "center", border: "1px solid black" }}
+                  colSpan={2}
                 >
                   <Text fontSize="2xl" fontWeight="bold" color="black">
-                    AE Students
+                    Startup and Industry Excellance
                     <br />
                   </Text>
                 </Td>
@@ -85,12 +90,25 @@ export default function Home() {
               <Tr>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
+                    href="/templates/REAE/RE_students PG_26.4.24.doc"
+                    passHref
+                  >
+                    <Link>
+                      <Text fontSize="2xl" fontWeight="bold" color="black">
+                        Students
+                        <br />
+                      </Text>
+                    </Link>
+                  </NextLink>
+                </Td>
+                <Td style={{ textAlign: "center", border: "1px solid black" }}>
+                  <NextLink
                     href="/templates/Research Excellence (Teaching Faculty).doc"
                     passHref
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Research Excellence (Teaching Faculty)
+                        Teaching
                         <br />
                       </Text>
                     </Link>
@@ -98,12 +116,12 @@ export default function Home() {
                 </Td>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
-                    href="/templates/REAE/RE_students UG_26.4.24.doc"
+                    href="/templates/REAE/AE_students PG_26.4.24.doc"
                     passHref
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        RE_students UG
+                        Students
                         <br />
                       </Text>
                     </Link>
@@ -111,32 +129,35 @@ export default function Home() {
                 </Td>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
+                    href="/templates/Academic Excellence (Teaching Faculty).doc"
+                    passHref
+                  >
+                    <Link>
+                      <Text fontSize="2xl" fontWeight="bold" color="black">
+                        Teaching
+                        <br />
+                      </Text>
+                    </Link>
+                  </NextLink>
+                </Td>
+                <Td
+                  style={{ textAlign: "center", border: "1px solid black" }}
+                  onClick={handlepop}
+                >
+                  {/* <NextLink
                     href="/templates/REAE/AE_students UG_26.4.24.doc"
                     passHref
-                  >
-                    <Link>
-                      <Text fontSize="2xl" fontWeight="bold" color="black">
-                        AE_students UG
-                        <br />
-                      </Text>
-                    </Link>
-                  </NextLink>
+                  > */}
+                  <Link>
+                    <Text fontSize="2xl" fontWeight="bold" color="black">
+                      Startup
+                      <br />
+                    </Text>
+                  </Link>
+                  {/* </NextLink> */}
                 </Td>
               </Tr>
               <Tr>
-                <Td style={{ textAlign: "center", border: "1px solid black" }}>
-                  <NextLink
-                    href="/templates/Academic Excellence Principal 26-4.doc"
-                    passHref
-                  >
-                    <Link>
-                      <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Academic Excellence Principal
-                        <br />
-                      </Text>
-                    </Link>
-                  </NextLink>
-                </Td>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
                     href="/templates/REAE/RE_students PhD_26.4.24.doc"
@@ -144,11 +165,24 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        RE_students PhD
+                        PhD
                         <br />
                       </Text>
                     </Link>
                   </NextLink>
+                </Td>
+                <Td style={{ textAlign: "center", border: "1px solid black" }}>
+                  {/* <NextLink
+                    href="/templates/REAE/RE_students PhD_26.4.24.doc"
+                    passHref
+                  >
+                    <Link>
+                      <Text fontSize="2xl" fontWeight="bold" color="black">
+                        Faculty
+                        <br />
+                      </Text>
+                    </Link>
+                  </NextLink> */}
                 </Td>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
@@ -157,29 +191,58 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        AE_students PhD
+                        PhD
                         <br />
                       </Text>
                     </Link>
                   </NextLink>
+                </Td>
+                <Td style={{ textAlign: "center", border: "1px solid black" }}>
+                  <NextLink
+                    href="/templates/Academic Excellence (HOD)26-4.doc"
+                    passHref
+                  >
+                    <Link>
+                      <Text fontSize="2xl" fontWeight="bold" color="black">
+                        HOD
+                        <br />
+                      </Text>
+                    </Link>
+                  </NextLink>
+                </Td>
+                <Td
+                  style={{ textAlign: "center", border: "1px solid black" }}
+                  onClick={handlepop}
+                >
+                  {/* <NextLink
+                    href="/templates/REAE/AE_students PhD_26.4.24.doc"
+                    passHref
+                  > */}
+                  <Link>
+                    <Text fontSize="2xl" fontWeight="bold" color="black">
+                      Industry Excellance
+                      <br />
+                    </Text>
+                  </Link>
+                  {/* </NextLink> */}
                 </Td>
               </Tr>
               <Tr>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
-                    href="/templates/Academic Excellence Institute 26-4.doc"
+                    href="/templates/REAE/RE_students UG_26.4.24.doc"
                     passHref
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Academic Excellence Institute
+                        UG
                         <br />
                       </Text>
                     </Link>
                   </NextLink>
                 </Td>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
-                  <NextLink
+                  {/* <NextLink
                     href="/templates/REAE/RE_students PG_26.4.24.doc"
                     passHref
                   >
@@ -189,16 +252,29 @@ export default function Home() {
                         <br />
                       </Text>
                     </Link>
-                  </NextLink>
+                  </NextLink> */}
                 </Td>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
-                    href="/templates/REAE/RE_students PG_26.4.24.doc"
+                    href="/templates/REAE/AE_students UG_26.4.24.doc"
                     passHref
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        AE_students PG
+                        UG
+                        <br />
+                      </Text>
+                    </Link>
+                  </NextLink>
+                </Td>
+                <Td style={{ textAlign: "center", border: "1px solid black" }}>
+                  <NextLink
+                    href="/templates/Academic Excellence Principal 26-4.doc"
+                    passHref
+                  >
+                    <Link>
+                      <Text fontSize="2xl" fontWeight="bold" color="black">
+                        Principal
                         <br />
                       </Text>
                     </Link>
@@ -206,29 +282,12 @@ export default function Home() {
                 </Td>
               </Tr>
               <Tr>
-                <Td style={{ textAlign: "center", border: "1px solid black" }}>
-                  <NextLink
-                    href="/templates/Academic Excellence (Teaching Faculty).doc"
-                    passHref
-                  >
-                    <Link>
-                      <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Academic Excellence (Teaching Faculty)
-                        <br />
-                      </Text>
-                    </Link>
-                  </NextLink>
-                </Td>
-                <Td style={{ textAlign: "center", border: "1px solid black" }}>
-                  <NextLink href="/templates/Annexure.docx" passHref>
-                    <Link>
-                      <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Annexure
-                        <br />
-                      </Text>
-                    </Link>
-                  </NextLink>
-                </Td>
+                <Td
+                  style={{ textAlign: "center", border: "1px solid black" }}
+                ></Td>
+                <Td
+                  style={{ textAlign: "center", border: "1px solid black" }}
+                ></Td>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
                     href="/templates/REAE/AE_students Diploma_26.4.24.doc"
@@ -236,52 +295,20 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        AE_students Diploma
+                        Diploma
                         <br />
                       </Text>
                     </Link>
                   </NextLink>
                 </Td>
-              </Tr>
-              <Tr>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
-                    href="/templates/Academic Excellence (HOD)26-4.doc"
+                    href="/templates/Academic Excellence Institute 26-4.doc"
                     passHref
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Academic Excellence (HOD)
-                        <br />
-                      </Text>
-                    </Link>
-                  </NextLink>
-                </Td>
-                <Td style={{ textAlign: "center", border: "1px solid black" }}>
-                  <NextLink href="" passHref>
-                    <Link>
-                      <Text
-                        fontSize="2xl"
-                        fontWeight="bold"
-                        color="black"
-                        onClick={handlepop}
-                      >
-                        Startup Excellence
-                        <br />
-                      </Text>
-                    </Link>
-                  </NextLink>
-                </Td>
-                <Td style={{ textAlign: "center", border: "1px solid black" }}>
-                  <NextLink href="" passHref>
-                    <Link>
-                      <Text
-                        fontSize="2xl"
-                        fontWeight="bold"
-                        color="black"
-                        onClick={handlepop}
-                      >
-                        Industry Excellence
+                        Institute
                         <br />
                       </Text>
                     </Link>

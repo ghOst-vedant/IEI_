@@ -82,7 +82,7 @@ const generalInstructions = () => {
                 <u>Templates</u>
               </a>
             </li>
-            <li>
+            {/* <li>
               {" "}
               Click here to view past proposals :{" "}
               <a
@@ -92,7 +92,7 @@ const generalInstructions = () => {
               >
                 <u>Past Proposals</u>{" "}
               </a>
-            </li>
+            </li> */}
 
             <li> IF IEI MEMBER, MEMBERSHIP ID DOCUMENT NEED TO BE UPLOADED</li>
             <li>
