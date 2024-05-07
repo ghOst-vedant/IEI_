@@ -69,7 +69,7 @@ export default function Home() {
                   colSpan={2}
                 >
                   <Text fontSize="2xl" fontWeight="bold" color="black">
-                    Academic Excellance
+                    Academic Excellence
                     <br />
                   </Text>
                 </Td>
@@ -82,7 +82,7 @@ export default function Home() {
                   colSpan={2}
                 >
                   <Text fontSize="2xl" fontWeight="bold" color="black">
-                    Startup and Industry Excellance
+                    Startup and Industry Excellence
                     <br />
                   </Text>
                 </Td>
@@ -95,7 +95,7 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Students
+                        PG Student
                         <br />
                       </Text>
                     </Link>
@@ -108,7 +108,7 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Teaching
+                        Teaching Faculty
                         <br />
                       </Text>
                     </Link>
@@ -121,7 +121,7 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Students
+                        PG Student
                         <br />
                       </Text>
                     </Link>
@@ -134,7 +134,7 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Teaching
+                        Teaching Faculty
                         <br />
                       </Text>
                     </Link>
@@ -162,7 +162,7 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        PhD
+                        PhD Student
                         <br />
                       </Text>
                     </Link>
@@ -188,7 +188,7 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        PhD
+                        PhD Student
                         <br />
                       </Text>
                     </Link>
@@ -214,7 +214,7 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Industry Excellance
+                        Industry Excellence
                         <br />
                       </Text>
                     </Link>
@@ -229,7 +229,7 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        UG
+                        UG Student
                         <br />
                       </Text>
                     </Link>
@@ -255,7 +255,7 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        UG
+                        UG Student
                         <br />
                       </Text>
                     </Link>
@@ -289,7 +289,7 @@ export default function Home() {
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Diploma
+                        Diploma Student
                         <br />
                       </Text>
                     </Link>
@@ -303,6 +303,21 @@ export default function Home() {
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
                         Institute
+                        <br />
+                      </Text>
+                    </Link>
+                  </NextLink>
+                </Td>
+              </Tr>
+              <Tr>
+                <Td
+                  style={{ textAlign: "center", border: "1px solid black" }}
+                  colSpan={5}
+                >
+                  <NextLink href="/templates/Annexure.docx" passHref>
+                    <Link>
+                      <Text fontSize="2xl" fontWeight="bold" color="black">
+                        Annexure
                         <br />
                       </Text>
                     </Link>
