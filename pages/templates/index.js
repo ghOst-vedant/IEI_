@@ -140,10 +140,7 @@ export default function Home() {
                     </Link>
                   </NextLink>
                 </Td>
-                <Td
-                  style={{ textAlign: "center", border: "1px solid black" }}
-                  // onClick={handlepop}
-                >
+                <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
                     href="/templates/Research Excellence (Startup).doc"
                     passHref
@@ -210,10 +207,7 @@ export default function Home() {
                     </Link>
                   </NextLink>
                 </Td>
-                <Td
-                  style={{ textAlign: "center", border: "1px solid black" }}
-                  onClick={handlepop}
-                >
+                <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
                     href="/templates/Research Excellence (Industry).doc"
                     passHref
