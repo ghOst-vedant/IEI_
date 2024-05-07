@@ -142,19 +142,19 @@ export default function Home() {
                 </Td>
                 <Td
                   style={{ textAlign: "center", border: "1px solid black" }}
-                  onClick={handlepop}
+                  // onClick={handlepop}
                 >
-                  {/* <NextLink
-                    href="/templates/REAE/AE_students UG_26.4.24.doc"
+                  <NextLink
+                    href="/templates/Research Excellence (Startup).doc"
                     passHref
-                  > */}
-                  <Link>
-                    <Text fontSize="2xl" fontWeight="bold" color="black">
-                      Startup
-                      <br />
-                    </Text>
-                  </Link>
-                  {/* </NextLink> */}
+                  >
+                    <Link>
+                      <Text fontSize="2xl" fontWeight="bold" color="black">
+                        Startup
+                        <br />
+                      </Text>
+                    </Link>
+                  </NextLink>
                 </Td>
               </Tr>
               <Tr>
@@ -214,17 +214,17 @@ export default function Home() {
                   style={{ textAlign: "center", border: "1px solid black" }}
                   onClick={handlepop}
                 >
-                  {/* <NextLink
-                    href="/templates/REAE/AE_students PhD_26.4.24.doc"
+                  <NextLink
+                    href="/templates/Research Excellence (Industry).doc"
                     passHref
-                  > */}
-                  <Link>
-                    <Text fontSize="2xl" fontWeight="bold" color="black">
-                      Industry Excellance
-                      <br />
-                    </Text>
-                  </Link>
-                  {/* </NextLink> */}
+                  >
+                    <Link>
+                      <Text fontSize="2xl" fontWeight="bold" color="black">
+                        Industry Excellance
+                        <br />
+                      </Text>
+                    </Link>
+                  </NextLink>
                 </Td>
               </Tr>
               <Tr>
