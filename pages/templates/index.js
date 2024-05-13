@@ -115,7 +115,7 @@ export default function Home() {
                   </NextLink>
                 </Td>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
-                  <NextLink
+                  {/* <NextLink
                     href="/templates/REAE/AE_students PG_26.4.24.doc"
                     passHref
                   >
@@ -125,7 +125,7 @@ export default function Home() {
                         <br />
                       </Text>
                     </Link>
-                  </NextLink>
+                  </NextLink> */}
                 </Td>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
@@ -182,7 +182,7 @@ export default function Home() {
                   </NextLink> */}
                 </Td>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
-                  <NextLink
+                  {/* <NextLink
                     href="/templates/REAE/AE_students PhD_26.4.24.doc"
                     passHref
                   >
@@ -192,7 +192,7 @@ export default function Home() {
                         <br />
                       </Text>
                     </Link>
-                  </NextLink>
+                  </NextLink> */}
                 </Td>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
