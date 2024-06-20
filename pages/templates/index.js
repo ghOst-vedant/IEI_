@@ -87,6 +87,7 @@ export default function Home() {
                   </Text>
                 </Td>
               </Tr>
+              {/* Row-2 */}
               <Tr>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
@@ -154,6 +155,7 @@ export default function Home() {
                   </NextLink>
                 </Td>
               </Tr>
+              {/* Row-3 */}
               <Tr>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
@@ -169,17 +171,17 @@ export default function Home() {
                   </NextLink>
                 </Td>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
-                  {/* <NextLink
-                    href="/templates/REAE/RE_students PhD_26.4.24.doc"
+                  <NextLink
+                    href="/templates/Research Excellence Industry Government.doc"
                     passHref
                   >
                     <Link>
                       <Text fontSize="2xl" fontWeight="bold" color="black">
-                        Faculty
+                        Industry/ Govt. Org/ Consultancy
                         <br />
                       </Text>
                     </Link>
-                  </NextLink> */}
+                  </NextLink>
                 </Td>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   {/* <NextLink
@@ -221,6 +223,7 @@ export default function Home() {
                   </NextLink>
                 </Td>
               </Tr>
+              {/* Row-4 */}
               <Tr>
                 <Td style={{ textAlign: "center", border: "1px solid black" }}>
                   <NextLink
@@ -275,6 +278,7 @@ export default function Home() {
                   </NextLink>
                 </Td>
               </Tr>
+              {/* Row-5 */}
               <Tr>
                 <Td
                   style={{ textAlign: "center", border: "1px solid black" }}
@@ -309,6 +313,7 @@ export default function Home() {
                   </NextLink>
                 </Td>
               </Tr>
+              {/* Row-6 */}
               <Tr>
                 <Td
                   style={{ textAlign: "center", border: "1px solid black" }}
