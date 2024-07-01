@@ -24,7 +24,7 @@ export default function Home() {
       </Center>
       <br />
       <Center fontSize={"2xl"} fontWeight="bold">
-        Registration Closing Date: 1st July 2024
+        Registration Closing Date: 20th July 2024
       </Center>
       <br />
       <Center fontSize={"2xl"} fontWeight="bold">
